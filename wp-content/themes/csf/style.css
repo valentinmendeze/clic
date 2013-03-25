@@ -4,3 +4,227 @@ Author: Milan Ricoul/Arnaud Lépicier
 Description: Thème pour le site Clic sans frontières
 Version: 0.1 alpha
 */
+
+html {
+	margin-top: 0 !important;
+}
+
+body {
+	background: #fff url(images/background.png);
+	border-top: 6px solid #02cbb7;
+	margin-top: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* #page (Container) */
+
+body .site {
+	max-width: 960px;
+}
+
+/* Header */
+
+header {
+	background: #fff;
+	border-top: 6px solid #02cbb7;
+	margin-top: -6px;
+}
+
+header ul {
+	margin: -6px 0px 0px 0px;
+}
+
+header ul li {
+	float: left;
+	list-style-type: none;
+	height: 65px;
+	width: 180px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 40px;
+}
+
+header ul li:hover {
+	background: url(images/menu-active-bg.png) no-repeat;
+}
+
+header ul li a {
+	font-size: 16px;
+	color: #cdcdcd;
+}
+
+header ul li a:hover {
+	text-decoration: none;
+	color: #cdcdcd;
+}
+
+header ul li.current_page_item a {
+	font-weight: bold;
+	color: #02cbb7;
+}
+
+/* Footer */
+
+footer{
+	background: #fff;
+	margin-top: 10px;
+	height: 200px;
+}
+
+footer h3 {
+	color: #02cbb7;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+footer nav ul {
+	margin-left: 0px;
+}
+
+footer nav ul li {
+	list-style-type: none;
+	line-height: 30px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+footer nav ul li a {
+	color: #b2b2b2;
+}
+
+footer nav ul li a:hover {
+	color: #b2b2b2;
+}
+
+/* Tpl Accueil */
+
+body .site .sub-head {
+	background: url(images/atelier-home.png) no-repeat;
+	height: 560px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+body .site .sub-head hgroup {
+	padding-top: 60px;
+	text-align: center;
+}
+
+body .site .sub-head hgroup a{
+	text-shadow: 0px 0px 9px #000;
+	text-transform: uppercase;
+	color: #02cbb7;
+}
+
+body .site .sub-head hgroup a:hover{
+	text-decoration: none;
+}
+
+body .site .sub-head hgroup h2{
+	text-shadow: 0px 0px 9px #000;
+	color: #fff;
+	font-weight: normal;
+}
+
+body .site .sub-head .caption {
+	bottom: 0;
+	background: rgba(0, 0, 0, .6);
+	height: 150px;
+	width: 100%;
+	border-top: 3px solid #02cbb7;
+	position: absolute;
+	padding-left: 10px;
+}
+
+body .site .sub-head .caption h2, p, .more, .more a, .more a:hover{
+	color: #fff;
+}
+
+body .site .sub-head .caption h2 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+body .site .sub-head .caption p {
+	margin-top: -5px;
+}
+
+body .site .sub-head .caption .more {
+	background: url(images/more.png) no-repeat;
+	height: 37px;
+	margin-top: -5px;
+}
+
+body .site .sub-head .caption .more a {
+	position: relative;
+	top: 7px;
+	left: 45px;
+}
+
+body .site .last-project {
+	margin-top: 10px;
+	padding-right: 0 !important;
+	background: #02cbb7;
+	color: #fff;
+	position: relative;
+}
+
+body .site .last-project h2 {
+	text-transform: uppercase;
+	font-size: 26px;
+	margin-top: 30px;
+}
+
+body .site .last-project a {
+	text-transform: uppercase;
+	color: #02cbb7;
+	transition: color .4s;
+	-moz-transition: color .4s;
+	-webkit-transition: color .4s;
+	-o-transition: color .4s;
+}
+
+body .site .last-project .commands {
+	position: absolute;
+	bottom: 10px;
+}
+
+body .site .last-project a:hover {
+	color: #fff;
+}
+
+body .site .last-project .buttons{
+	text-align: center;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 135px;
+	float: left;
+	margin: 5px;
+	transition: background .4s;
+	-moz-transition: background .4s;
+	-webkit-transition: background .4s;
+	-o-transition: background .4s;
+}
+
+body .site .last-project .buttons:hover {
+	background: #02cbb7;
+}
+
+body .site .last-project .donate{
+	padding-top: 12px;
+	height: 33px;
+}
+
+body .site .last-project .discover{
+	padding-top: 3px;
+	height: 42px;
+}
