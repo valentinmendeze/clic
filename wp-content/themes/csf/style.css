@@ -100,7 +100,7 @@ footer nav ul li a:hover {
 	color: #b2b2b2;
 }
 
-/* Tpl Accueil */
+/* Accueil */
 
 body .site .sub-head {
 	background: url(images/atelier-home.png) no-repeat;
@@ -194,6 +194,7 @@ body .site .last-project a {
 body .site .last-project .commands {
 	position: absolute;
 	bottom: 10px;
+	width: 100%;
 }
 
 body .site .last-project a:hover {
@@ -227,4 +228,24 @@ body .site .last-project .donate{
 body .site .last-project .discover{
 	padding-top: 3px;
 	height: 42px;
+}
+
+/* Page Project Phare Courrant */
+
+body .site .current-project {
+	background: #fff;
+}
+
+body .site .current-project p{
+	color: #222;
+}
+
+/* Page Project Archive */
+
+body .site .archive-project {
+	background: #fff;
+}
+
+body .site .archive-project p {
+	color: #222;
 }
