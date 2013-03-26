@@ -5,7 +5,8 @@
 
 	$project = new WP_query(array(
 		'post_type' => 'project',
-		'posts_per_page' => '1'
+		'posts_per_page' => '1',
+		'statut' => 'projets-phares'
 	));
 
 ?>

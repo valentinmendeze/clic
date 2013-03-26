@@ -14,6 +14,7 @@
 					<blockquote class="pull-right">
 						<small>Rédigé par <?php the_author() ?>, le <?php the_date(); ?></small>
 					</blockquote>
+					<?php echo get_the_term_list(get_the_ID(), 'statut', 'Projet : ', ',', ''); ?>
 				</article>
 					<?php comments_template( '', true ); ?>
 			<?php endif; ?>
