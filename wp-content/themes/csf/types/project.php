@@ -2,8 +2,8 @@
 
 function register_project() {
   $labels = array(
-    'name' => 'Projets phares',
-    'singular_name' => 'Projet phare',
+    'name' => 'Projets',
+    'singular_name' => 'Projet',
     'add_new' => 'Ajouter',
     'add_new_item' => 'Ajouter un projet',
     'edit_item' => 'Modifier un projet',
@@ -14,7 +14,7 @@ function register_project() {
     'not_found' =>  'Aucun projet trouvé',
     'not_found_in_trash' => 'Aucun projet dans la corbeille', 
     'parent_item_colon' => '',
-    'menu_name' => 'Projets phares'
+    'menu_name' => 'Projets'
   );
 
   $args = array(

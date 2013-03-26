@@ -1,20 +1,28 @@
 <?php
-/*
-Template Name: Projet
-*/
-?>
+/**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
+ */
 
-<?php get_header() ?>
+get_header(); ?>
 
-<h3>Derniers projets</h3>
-<ul>
-<?php
-    $recentPosts = new WP_Query();
-    $recentPosts->query('showposts=5');
-?>
-<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-    <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></li>
-<?php endwhile; ?>
-</ul>
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
 
-<?php get_footer() ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', 'page' ); ?>
+				<?php comments_template( '', true ); ?>
+			<?php endwhile; // end of the loop. ?>
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>
