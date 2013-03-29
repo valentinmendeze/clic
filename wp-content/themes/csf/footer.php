@@ -19,7 +19,7 @@
 </div> <!-- Fin de #page -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="jquery.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"><\/script>')</script>
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.parallax-1.1.3.js"></script>
 
