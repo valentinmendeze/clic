@@ -11,7 +11,7 @@
 
 ?>
 
-	<div class="sub-head">
+	<section id="subhead" class="subhead subhead-project">
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -25,11 +25,11 @@
 				<span><a href="<?php bloginfo('url') ?>">En savoir plus</a></span>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<?php if($project->have_posts()): $project->the_post(); ?>
 
-	<div class="last-project container-fluid">
+	<section class="last-project container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<article class="span4">
@@ -50,9 +50,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<?php else: ?>
+	</section>
 
 	<?php endif; wp_reset_query(); ?>
 

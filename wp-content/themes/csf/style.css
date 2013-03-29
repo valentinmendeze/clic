@@ -102,36 +102,36 @@ footer nav ul li a:hover {
 
 /* Accueil */
 
-body .site .sub-head {
+body .site .subhead-project {
 	background: url(images/atelier-home.png) no-repeat;
-	height: 560px;
+	height: 500px;
 	position: relative;
 	overflow: hidden;
 
 }
 
-body .site .sub-head hgroup {
+body .site .subhead hgroup {
 	padding-top: 60px;
 	text-align: center;
 }
 
-body .site .sub-head hgroup a{
+body .site .subhead hgroup a{
 	text-shadow: 0px 0px 9px #000;
 	text-transform: uppercase;
 	color: #02cbb7;
 }
 
-body .site .sub-head hgroup a:hover{
+body .site .subhead hgroup a:hover{
 	text-decoration: none;
 }
 
-body .site .sub-head hgroup h2{
+body .site .subhead hgroup h2{
 	text-shadow: 0px 0px 9px #000;
 	color: #fff;
 	font-weight: normal;
 }
 
-body .site .sub-head .caption {
+body .site .subhead-project .caption {
 	bottom: 0;
 	background: rgba(0, 0, 0, .6);
 	height: 150px;
@@ -141,28 +141,28 @@ body .site .sub-head .caption {
 	padding-left: 10px;
 }
 
-body .site .sub-head .caption h2, p, .more, .more a, .more a:hover{
+body .site .subhead-project .caption h2, p, .more, .more a, .more a:hover{
 	color: #fff;
 }
 
-body .site .sub-head .caption h2 {
+body .site .subhead-project .caption h2 {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
 }
 
-body .site .sub-head .caption p {
+body .site .subhead-project .caption p {
 	margin-top: -5px;
 }
 
-body .site .sub-head .caption .more {
+body .site .subhead-project .caption .more {
 	background: url(images/more.png) no-repeat;
 	height: 37px;
 	margin-top: -5px;
 }
 
-body .site .sub-head .caption .more a {
+body .site .subhead-project .caption .more a {
 	position: relative;
 	top: 7px;
 	left: 45px;
@@ -230,22 +230,206 @@ body .site .last-project .discover{
 	height: 42px;
 }
 
-/* Page Project Phare Courrant */
+/* Page Liste des projets */
+
+body .site .subhead-projectarchive {
+	background: url(images/example3.png) no-repeat;
+	height: 350px;
+	overflow: hidden;
+}
+
+body .site .subhead-projectarchive h1 {
+	text-shadow: 0px 0px 9px #000;
+	text-transform: uppercase;
+	color: #02cbb7;
+	margin-top: 100px;
+}
+
+body .site .subhead-projectarchive h2 {
+	margin: auto;
+	width: 600px;
+}
+
+body .site .project-list {
+	margin-top: 10px;
+}
+
+body .site .project-list .projectlist-caption {
+	background: #02cbb7;
+	height: 150px;
+}
+
+body .site .project-list .projectlist-caption h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	width: 200px;
+	margin: 30px;
+	line-height: 24px;
+}
+
+body .site .project-list .thumb-block {
+	margin-left: 10px !important;
+}
+
+body .site .project-list .projectlist-thumb {
+	background: #111;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+body .site .project-list .projectlist-thumb div {
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+}
+
+body .site .project-list .projectlist-thumb div h3 {
+	margin-left: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: 0px 0px 9px #000;
+}
+
+
+body .site .project-list .projectlist-thumb img {
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	position: relative;
+	z-index: 2;
+}
+
+body .site .project-list .projectlist-thumb img:hover {
+	opacity: .4;
+	position: relative;
+	z-index: 0;
+}
+
+body .site .project-finish {
+	margin-top: 10px;
+}
+
+body .site .project-finish .projectfinish-caption {
+	background: #02cbb7;
+	height: 150px;
+}
+
+body .site .project-finish .projectfinish-caption h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	width: 200px;
+	margin: 30px;
+	line-height: 24px;
+}
+
+body .site .project-finish .projectfinish-thumb {
+	background: #111;
+	position: relative;
+	float: right;
+	margin-right: 10px;
+}
+
+body .site .project-finish .projectfinish-thumb div {
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+}
+
+body .site .project-finish .projectfinish-thumb div h3 {
+	margin-left: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: 0px 0px 9px #000;
+}
+
+
+body .site .project-finish .projectfinish-thumb img {
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	position: relative;
+	z-index: 2;
+}
+
+body .site .project-finish .projectfinish-thumb img:hover {
+	opacity: .4;
+	position: relative;
+	z-index: 0;
+}
+
+/* Page Single Project */
+
+body .site .subhead-single-project {
+	background: url(images/example2.png) no-repeat;
+	height: 350px;
+	overflow: hidden;
+}
+
+body .site .subhead-single-project h1 {
+	text-shadow: 0px 0px 9px #000;
+	text-transform: uppercase;
+	color: #02cbb7;
+	position: relative;
+	top: 160px;
+}
 
 body .site .current-project {
 	background: #fff;
+	padding-right: 0;
+	padding-left: 0;
+	margin-top: 10px;
 }
 
-body .site .current-project p{
-	color: #222;
+body .site .current-project article {
+	padding: 20px 25px;
 }
 
-/* Page Project Archive */
-
-body .site .archive-project {
-	background: #fff;
+body .site .current-project article p {
+	color: #9b9b9b;
+	line-height: 25px;
 }
 
-body .site .archive-project p {
-	color: #222;
+body .site .current-project article .project-link {
+	margin-top: 60px;
+}
+
+body .site .current-project article .project-link li{
+	float: left;
+	margin-right: 25%;
+}
+
+body .site .current-project article .project-link a {
+	text-transform: uppercase;
+	color: #02cbb7;
+}
+
+body .site .current-project aside {
+	background: #02cbb7;
+}
+
+body .site .current-project aside h2, li {
+	color: #fff;
+}
+
+body .site .current-project aside h2 {
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+body .site .current-project aside ul {
+	margin-left: 50px;
+}
+
+body .site .current-project aside li {
+	list-style-type: none;
+	margin-bottom: 10px;
 }
