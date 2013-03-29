@@ -316,6 +316,7 @@ body .site .project-finish {
 body .site .project-finish .projectfinish-caption {
 	background: #02cbb7;
 	height: 150px;
+	margin-left: 10px;
 }
 
 body .site .project-finish .projectfinish-caption h2 {
@@ -331,7 +332,7 @@ body .site .project-finish .projectfinish-thumb {
 	background: #111;
 	position: relative;
 	float: right;
-	margin-right: 10px;
+	margin-left: 10px;
 }
 
 body .site .project-finish .projectfinish-thumb div {
