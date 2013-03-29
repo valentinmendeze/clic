@@ -21,5 +21,6 @@
 	add_action('after_setup_theme', 'csf_theme_init');
 
 	add_theme_support( 'post-thumbnails' );
-
+	
+	add_image_size( 'cover', 620, 350, true );
  ?>

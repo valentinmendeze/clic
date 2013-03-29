@@ -47,7 +47,7 @@
 				</article>
 				<div class="thumb span8">
 				<?php if(get_field('accueil-thumbnail')): ?>
-					<img src="<?php the_field('accueil-thumbnail'); ?>" />
+					<?php echo wp_get_attachment_image( get_field('accueil-thumbnail'), 'cover'); ?>
 				<?php else: ?>
 					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
 				<?php endif; ?>
