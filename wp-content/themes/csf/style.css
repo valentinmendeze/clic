@@ -383,11 +383,22 @@ body .site .subhead-single-project h1 {
 	top: 160px;
 }
 
+body .site .breadcrumb-single-project {
+	margin-top: 10px;
+}
+
+body .site .breadcrumb-single-project ul {
+	background: #fff !important;
+}
+
+body .site .breadcrumb-single-project a {
+	color: #02cbb7;
+}
+
 body .site .current-project {
 	background: #fff;
 	padding-right: 0;
 	padding-left: 0;
-	margin-top: 10px;
 }
 
 body .site .current-project article {

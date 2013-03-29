@@ -8,6 +8,14 @@
 		</hgroup>
 	</section>
 
+	<section class="breadcrumb-single-project">
+		<ul class="breadcrumb">
+			<li><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ) ?></a> <span class="divider">/</span></li>
+			<li><a href="<?php echo get_permalink(7); ?>">Les projets</a> <span class="divider">/</span></li>
+			<li class="active"><?php the_title(); ?></li>
+		</ul>
+	</section>
+
 	<section class="current-project container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
