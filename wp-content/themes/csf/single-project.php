@@ -26,9 +26,11 @@
 				</article>
 				<aside class="span4">
 					<h2>Informations pratiques</h2>
+					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
+					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
-						<li>Date de début : <?php the_field('date_de_commencement'); ?></li>
-						<li>Date de fin :  <?php the_field('date_de_fin'); ?></li>
+						<li>Date de début : <?php echo $dated->format('d/m/Y'); ?></li>
+						<li>Date de fin :  <?php echo $datef->format('d/m/Y');; ?></li>
 						<li>Lieu : </li>
 						<li>Coup du projet : </li>
 					</ul>

@@ -34,7 +34,11 @@
 			<div class="span12">
 				<article class="span4">
 					<h2><?php the_title(); ?></h2>
+					<?php if (get_field('quick_description')): ?>
+					<p><?php the_field('quick_description'); ?></p>
+					<?php else: ?>
 					<p><?php the_excerpt(); ?></p>
+					<?php endif; ?>
 					<div class="commands">
 						<a href="#"><div class="buttons donate">Faire un don</div></a>
 						<a href="<?php the_permalink(); ?>"><div class="buttons discover">Découvrir le projet</div></a>
@@ -42,8 +46,8 @@
 					</div>
 				</article>
 				<div class="thumb span8">
-				<?php if(has_post_thumbnail()): ?>
-					<?php the_post_thumbnail('large'); ?>
+				<?php if(get_field('accueil-thumbnail')): ?>
+					<img src="<?php the_field('accueil-thumbnail'); ?>" />
 				<?php else: ?>
 					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
 				<?php endif; ?>
