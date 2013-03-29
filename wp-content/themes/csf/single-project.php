@@ -1,25 +1,44 @@
 <?php get_header(); ?>
 
-	<div class="current-project container-fluid">
+<?php if(have_posts()): the_post(); ?>
+
+	<section id="subhead" class="subhead subhead-single-project">
+		<hgroup>
+			<h1 class="site-title"><?php the_title(); ?></h1>
+		</hgroup>
+	</section>
+
+	<section class="current-project container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
-			<?php if(have_posts()): the_post(); ?>
-
-				<aside class="span4">
-					<?php the_post_thumbnail('large'); ?>
-				</aside>
 				<article class="span8">
-					<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
 					<blockquote class="pull-right">
 						<small>Rédigé par <?php the_author() ?>, le <?php the_date(); ?></small>
 					</blockquote>
-					<?php echo get_the_term_list(get_the_ID(), 'statut', 'Projet : ', ',', ''); ?>
+					<ul class="project-link">
+					<?php if (get_field('donate-link')): ?>
+						<li><a href="<?php the_field('donate-link'); ?>">Faire un don</a></li>
+					<?php endif; ?>
+						<li><a href="<?php echo get_permalink(7); ?>">Revenir aux projets</a></li>
+					</ul>
+					<div class="clear"></div>
 				</article>
-					<?php comments_template( '', true ); ?>
-			<?php endif; ?>
+				<aside class="span4">
+					<h2>Informations pratiques</h2>
+					<ul>
+						<li>Date de début : <?php the_field('date_de_commencement'); ?></li>
+						<li>Date de fin :  <?php the_field('date_de_fin'); ?></li>
+						<li>Lieu : </li>
+						<li>Coup du projet : </li>
+					</ul>
+				</aside>
+				<?php //comments_template( '', true ); ?>
 			</div>
 		</div>
-	</div>
+	</section>
+
+
+<?php endif; ?>
 
 <?php get_footer(); ?>
