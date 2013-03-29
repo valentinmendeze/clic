@@ -40,7 +40,7 @@ header ul {
 header ul li {
 	float: left;
 	list-style-type: none;
-	height: 65px;
+	height: 55px;
 	width: 180px;
 	text-transform: uppercase;
 	text-align: center;
@@ -116,7 +116,7 @@ body .site .subhead hgroup {
 }
 
 body .site .subhead hgroup a{
-	text-shadow: 0px 0px 9px #000;
+	text-shadow: 0px 0px 5px #000;
 	text-transform: uppercase;
 	color: #02cbb7;
 }
@@ -257,8 +257,9 @@ body .site .project-list {
 }
 
 body .site .project-list .projectlist-caption {
-	background: #02cbb7;
+	background: rgb(2, 139, 203);
 	height: 150px;
+	
 }
 
 body .site .project-list .projectlist-caption h2 {
@@ -316,7 +317,7 @@ body .site .project-finish {
 }
 
 body .site .project-finish .projectfinish-caption {
-	background: #02cbb7;
+	background: rgb(2, 139, 203);
 	height: 150px;
 	margin-left: 10px;
 }

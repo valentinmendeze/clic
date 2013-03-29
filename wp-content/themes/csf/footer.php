@@ -25,7 +25,7 @@
 
 	<script>
 		$(document).ready(function(){		
-	        $('#subhead').parallax("center", -.5);
+	        $('#subhead').parallax("center", -.4);
 	    })
 	</script>
 	

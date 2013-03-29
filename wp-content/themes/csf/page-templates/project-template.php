@@ -23,7 +23,6 @@
 	<section id="subhead" class="subhead subhead-projectarchive">
 		<hgroup>
 			<h1 class="site-title">Les projets</h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 	</section>
 

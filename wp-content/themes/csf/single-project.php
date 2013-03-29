@@ -20,9 +20,10 @@
 		<div class="row-fluid">
 			<div class="span12">
 				<article class="span8">
+					<h2>Le projet</h2>
 					<?php the_content(); ?>
 					<blockquote class="pull-right">
-						<small>Rédigé par <?php the_author() ?>, le <?php the_date(); ?></small>
+						<small>Créé par <?php the_author() ?>, le <?php the_date(); ?></small>
 					</blockquote>
 					<ul class="project-link">
 					<?php if (get_field('donate-link')): ?>
@@ -40,7 +41,8 @@
 						<li>Date de début : <?php echo $dated->format('d/m/Y'); ?></li>
 						<li>Date de fin :  <?php echo $datef->format('d/m/Y');; ?></li>
 						<li>Lieu : </li>
-						<li>Coup du projet : </li>
+						<li>Coût du projet : </li>
+						<li>Dossier PDF : Télécharger</li>
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>
