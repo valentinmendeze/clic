@@ -390,6 +390,7 @@ body .site .subhead-single-project h1 {
 
 body .site .breadcrumb-single-project {
 	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 body .site .breadcrumb-single-project ul {

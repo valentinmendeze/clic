@@ -2,7 +2,7 @@
 
 <?php if(have_posts()): the_post(); ?>
 
-<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'subhead'); ?>
 
 	<style type="text/css">
 		.subhead-single-project {
@@ -47,17 +47,18 @@
 					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
-						<li>Date de début : <?php echo $dated->format('d/m/Y'); ?></li>
-						<li>Date de fin :  <?php echo $datef->format('d/m/Y');; ?></li>
-						<li>Lieu : </li>
-						<li>Coût du projet : </li>
-						<li>Dossier PDF : Télécharger</li>
+						<li>Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
+						<li>Date de fin:  <?php echo $datef->format('d/m/Y');; ?></li>
+						<li>Lieu: <?php the_field('lieu-projet'); ?></li>
+						<li>Coût du projet: <?php the_field('cout-projet'); ?></li>
+						<li>Informations projet: <a href="<?php the_field("dossier_du_projet");?>">Télécharger</a></li>
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>
 			</div>
 		</div>
 	</section>
+
 
 
 <?php endif; ?>
