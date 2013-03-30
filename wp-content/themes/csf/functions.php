@@ -22,5 +22,6 @@
 
 	add_theme_support( 'post-thumbnails' );
 	
-	add_image_size( 'cover', 620, 350, true );
+	add_image_size( 'cover', 650, 350, true );
+
  ?>

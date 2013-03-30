@@ -40,17 +40,18 @@
 					<p><?php the_excerpt(); ?></p>
 					<?php endif; ?>
 					<div class="commands">
-						<a href="#"><div class="buttons donate">Faire un don</div></a>
+						<a href="<?php the_field('donate-link'); ?>"><div class="buttons donate">Faire un don</div></a>
 						<a href="<?php the_permalink(); ?>"><div class="buttons discover">Découvrir le projet</div></a>
 						<div class="clear"></div>
 					</div>
 				</article>
 				<div class="thumb span8">
-				<?php if(get_field('accueil-thumbnail')): ?>
-					<?php echo wp_get_attachment_image( get_field('accueil-thumbnail'), 'cover'); ?>
+				<?php if(has_post_thumbnail()): ?>
+					<?php the_post_thumbnail('cover'); ?>
 				<?php else: ?>
 					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
 				<?php endif; ?>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>

@@ -2,6 +2,15 @@
 
 <?php if(have_posts()): the_post(); ?>
 
+<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+
+	<style type="text/css">
+		.subhead-single-project {
+			background: url('<?php echo $large_image_url[0]; ?>') no-repeat;
+			background-size: 980px;
+		}
+	</style>
+
 	<section id="subhead" class="subhead subhead-single-project">
 		<hgroup>
 			<h1 class="site-title"><?php the_title(); ?></h1>

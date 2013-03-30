@@ -232,6 +232,10 @@ body .site .last-project .discover{
 	height: 42px;
 }
 
+body .site .last-project .thumb img{
+	float: right;
+}
+
 /* Page Liste des projets */
 
 body .site .subhead-projectarchive {
@@ -371,7 +375,7 @@ body .site .project-finish .projectfinish-thumb img:hover {
 /* Page Single Project */
 
 body .site .subhead-single-project {
-	background: url(images/example2.png) no-repeat;
+	/*background: url(images/example2.png) no-repeat;*/
 	height: 350px;
 	overflow: hidden;
 }

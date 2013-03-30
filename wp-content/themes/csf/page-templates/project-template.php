@@ -4,7 +4,14 @@
 
 	$projet = new WP_query(array(
 		'post_type' => 'project',
-		'posts_per_page' => 1
+		'posts_per_page' => 1,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'statut',
+				'field' => 'slug',
+				'terms' => 'projet-termines',
+				'operator' => 'NOT IN',
+			))
 	));
 
 	$projet_phare = new WP_query(array(
@@ -67,11 +74,12 @@
 					</div>
 				</article>
 				<div class="thumb span8">
-				<?php if(get_field('accueil-thumbnail')): ?>
-					<?php echo wp_get_attachment_image( get_field('accueil-thumbnail'), 'cover'); ?>
+				<?php if(has_post_thumbnail()): ?>
+					<?php the_post_thumbnail('cover'); ?>
 				<?php else: ?>
 					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
 				<?php endif; ?>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
