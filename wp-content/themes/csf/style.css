@@ -70,7 +70,6 @@ header ul li.current_page_item a {
 
 footer{
 	background: #fff;
-	margin-top: 10px;
 	height: 200px;
 }
 
@@ -171,7 +170,6 @@ body .site .subhead-project .caption .more a {
 }
 
 body .site .last-project {
-	margin-top: 10px;
 	padding-right: 0 !important;
 	background: #02cbb7;
 	color: #fff;
@@ -257,7 +255,9 @@ body .site .subhead-projectarchive h2 {
 }
 
 body .site .project-list {
-	margin-top: 10px;
+	background: url(images/damier-bg.png);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 body .site .project-list .projectlist-caption {
@@ -320,7 +320,9 @@ body .site .project-list .projectlist-thumb img:hover {
 }
 
 body .site .project-finish {
-	margin-top: 10px;
+	background: url(images/damier-bg.png);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 body .site .project-finish .projectfinish-caption {
@@ -407,14 +409,18 @@ body .site .breadcrumb-single-project a {
 }
 
 body .site .current-project {
-	background: #fff;
+	background: url(images/damier-bg.png);
 	padding-right: 0;
-	padding-left: 0;
+	padding-left: 15px;
 	margin-top: -10px;
 }
 
 body .site .current-project article {
 	padding: 20px 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 body .site .current-project article h2 {

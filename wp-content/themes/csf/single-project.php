@@ -48,19 +48,11 @@
 					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
-<<<<<<< HEAD
-						<li>Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
-						<li>Date de fin:  <?php echo $datef->format('d/m/Y');; ?></li>
-						<li>Lieu: <?php the_field('lieu-projet'); ?></li>
-						<li>Coût du projet: <?php the_field('cout-projet'); ?></li>
-						<li>Informations projet: <a href="<?php the_field("dossier_du_projet");?>">Télécharger</a></li>
-=======
-						<li class="date-debut"><strong>Date de début : </strong><?php echo $dated->format('d/m/Y'); ?></li>
-						<li class="date-fin"><strong>Date de fin :  </strong><?php echo $datef->format('d/m/Y');; ?></li>
-						<li class="lieu"><strong>Lieu : </strong><?php the_field('adresse_de_la_carte'); ?></li>
-						<li class="cout"><strong>Coût du projet : </strong><?php the_field('cout_du_projet'); ?>€</li>
-						<li class="pdf"><strong>Dossier PDF : </strong>Télécharger</li>
->>>>>>> ACF 4.0.0 & Carousel jQuery on Projetcs page
+						<li class="date-debut">Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
+						<li class="date-fin">Date de fin:  <?php echo $datef->format('d/m/Y');; ?></li>
+						<li class="lieu">Lieu: <?php the_field('lieu-projet'); ?></li>
+						<li class="cout">Coût du projet: <?php the_field('cout-projet'); ?></li>
+						<li class="pdf">Informations projet: <a href="<?php the_field("dossier_du_projet");?>">Télécharger</a></li>
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>
