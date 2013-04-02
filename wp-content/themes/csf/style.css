@@ -263,7 +263,8 @@ body .site .project-list {
 body .site .project-list .projectlist-caption {
 	background: rgb(2, 139, 203);
 	height: 150px;
-	
+	position: relative;
+	z-index: 2;	
 }
 
 body .site .project-list .projectlist-caption h2 {
@@ -281,6 +282,7 @@ body .site .project-list .thumb-block {
 
 body .site .project-list .projectlist-thumb {
 	background: #111;
+	overflow: hidden;
 	position: relative;
 	float: left;
 	margin-right: 10px;
@@ -294,6 +296,7 @@ body .site .project-list .projectlist-thumb div {
 
 body .site .project-list .projectlist-thumb div h3 {
 	margin-left: 20px;
+	font-size: 20px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -324,6 +327,8 @@ body .site .project-finish .projectfinish-caption {
 	background: rgb(2, 139, 203);
 	height: 150px;
 	margin-left: 10px;
+	position: relative;
+	z-index: 2;	
 }
 
 body .site .project-finish .projectfinish-caption h2 {
@@ -405,10 +410,16 @@ body .site .current-project {
 	background: #fff;
 	padding-right: 0;
 	padding-left: 0;
+	margin-top: -10px;
 }
 
 body .site .current-project article {
 	padding: 20px 25px;
+}
+
+body .site .current-project article h2 {
+	font-size: 28px;
+	text-transform: uppercase;
 }
 
 body .site .current-project article p {
@@ -452,4 +463,21 @@ body .site .current-project aside ul {
 body .site .current-project aside li {
 	list-style-type: none;
 	margin-bottom: 10px;
+}
+
+body .site .current-project aside .date-debut {
+	list-style-image: url(images/logo-debut.png);
+}
+body .site .current-project aside .date-fin {
+	list-style-image: url(images/logo-fin.png);
+
+}
+body .site .current-project aside .lieu {
+	list-style-image: url(images/logo-lieu.png);	
+}
+body .site .current-project aside .cout {
+	list-style-image: url(images/logo-euro.png);
+}
+body .site .current-project aside .pdf {
+	list-style-image: url(images/logo-pdf.png);
 }

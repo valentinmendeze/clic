@@ -5,7 +5,7 @@
 <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'subhead'); ?>
 
 	<style type="text/css">
-		.subhead-single-project {
+		body .site .subhead-single-project {
 			background: url('<?php echo $large_image_url[0]; ?>') no-repeat;
 			background-size: 980px;
 		}
@@ -32,7 +32,7 @@
 					<h2>Le projet</h2>
 					<?php the_content(); ?>
 					<blockquote class="pull-right">
-						<small>Créé par <?php the_author() ?>, le <?php the_date(); ?></small>
+						<small>Rédigé par <?php the_author() ?>, le <?php the_date(); ?></small>
 					</blockquote>
 					<ul class="project-link">
 					<?php if (get_field('donate-link')): ?>
@@ -43,15 +43,24 @@
 					<div class="clear"></div>
 				</article>
 				<aside class="span4">
+					<?php echo do_shortcode(''); ?>
 					<h2>Informations pratiques</h2>
 					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
+<<<<<<< HEAD
 						<li>Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
 						<li>Date de fin:  <?php echo $datef->format('d/m/Y');; ?></li>
 						<li>Lieu: <?php the_field('lieu-projet'); ?></li>
 						<li>Coût du projet: <?php the_field('cout-projet'); ?></li>
 						<li>Informations projet: <a href="<?php the_field("dossier_du_projet");?>">Télécharger</a></li>
+=======
+						<li class="date-debut"><strong>Date de début : </strong><?php echo $dated->format('d/m/Y'); ?></li>
+						<li class="date-fin"><strong>Date de fin :  </strong><?php echo $datef->format('d/m/Y');; ?></li>
+						<li class="lieu"><strong>Lieu : </strong><?php the_field('adresse_de_la_carte'); ?></li>
+						<li class="cout"><strong>Coût du projet : </strong><?php the_field('cout_du_projet'); ?>€</li>
+						<li class="pdf"><strong>Dossier PDF : </strong>Télécharger</li>
+>>>>>>> ACF 4.0.0 & Carousel jQuery on Projetcs page
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>

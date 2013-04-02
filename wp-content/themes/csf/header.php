@@ -3,9 +3,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php bloginfo( 'name' ); ?><?php wp_title(); ?></title>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/elastislide.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.css">
+
+	<script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.17475.js"></script>
 
 	<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>

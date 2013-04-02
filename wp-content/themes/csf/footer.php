@@ -20,7 +20,9 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"><\/script>')</script>
+	<!-- jQuery Bootsrap -->
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+	<!-- jQuery Parallax -->
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.parallax-1.1.3.js"></script>
 
 	<script>
@@ -28,6 +30,15 @@
 	        $('#subhead').parallax("center", -.4);
 	    })
 	</script>
-	
+
+	<script src="<?php bloginfo('template_url'); ?>/js/jquerypp.custom.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.elastislide.js"></script>
+	<script>
+		
+		$( '#carouselTop' ).elastislide();
+		$( '#carouselBottom').elastislide();
+		
+	</script>
+
 </body>
 </html>
