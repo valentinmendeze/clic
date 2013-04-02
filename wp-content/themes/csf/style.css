@@ -328,7 +328,7 @@ body .site .project-finish {
 body .site .project-finish .projectfinish-caption {
 	background: rgb(2, 139, 203);
 	height: 150px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	position: relative;
 	z-index: 2;	
 }
