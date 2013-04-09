@@ -1,4 +1,10 @@
-<?php get_header() ?>
+<?php
+/*
+Template Name: Page Projets
+*/
+?>
+
+<?php get_header(); ?>
 
 <?php 
 
@@ -112,4 +118,4 @@
 
 	<?php wp_reset_query(); ?>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
