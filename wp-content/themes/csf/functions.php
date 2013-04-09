@@ -1,6 +1,8 @@
 <?php 
 
 	require_once(ABSPATH.'wp-content/themes/csf/types/project.php');
+	require_once(ABSPATH.'wp-content/themes/csf/types/presentation.php');
+	require_once(ABSPATH.'wp-content/themes/csf/types/team.php');
 
 	function no_comment_notes_after($defaults) {
     
@@ -24,6 +26,7 @@
 	
 	add_image_size( 'cover', 650, 350, true );
 	add_image_size( 'subhead', 960, 400, true );
+	add_image_size( 'avatar', 100, 100, true );
 
 
  ?>

@@ -17,7 +17,8 @@ Template Name: Page Projets
 				'field' => 'slug',
 				'terms' => 'projet-termines',
 				'operator' => 'NOT IN',
-			))
+			)
+		)
 	));
 
 	$projet_phare = new WP_query(array(
