@@ -522,8 +522,63 @@ body .site .presentation h2{
 	font-size: 20px;
 }
 
+body .site .presentation p {
+	color: #aaa;
+}
+
+body .site .presentation .span3 {
+	background: url(images/thumb-presentation-1.png) no-repeat top center;
+	height: 100px;
+}
+
+body .site .members {
+	padding-bottom: 30px;
+}
+
 body .site .members h2 {
 	color: #02cbb7;
 	text-transform: uppercase;
 	font-size: 20px;
+}
+
+body .site .members .portrait {
+	background: #fff url(images/quotes.png) no-repeat top left;
+	padding: 20px 60px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+body .site .members .portrait p {
+	color: #aaa;
+}
+
+body .site .members .triangle {
+	background: url(images/triangle.png) no-repeat;
+	width: 54px;
+	height: 30px;
+	margin-left: 130px;
+}
+
+body .site .members .identity {
+	margin-top: 30px;
+}
+
+body .site .members .identity .profil {
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+}
+
+body .site .members .identity .profil .name, .job {
+	color: #373737;
+	font-size: 14px;
+}
+
+body .site .members .identity .profil .name {
+	text-transform: uppercase;
+}
+
+body .site .members .identity img {
+	margin-left: 20px;
+	border-radius: 100px;
+	max-width: 100px;
 }
