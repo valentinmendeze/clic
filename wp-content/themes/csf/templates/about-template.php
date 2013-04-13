@@ -48,7 +48,7 @@ Template Name: A propos
 					<div class="triangle"></div>
 					<div class="identity">
 						<div class="profil">
-							<span class="name"><?php the_field('prenom_et_nom'); ?></span>
+							<span class="name"><?php the_title(); ?></span>
 							<br>
 							<span class="job"><?php the_field('profession'); ?></span>
 						</div>

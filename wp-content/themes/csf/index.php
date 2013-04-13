@@ -1,7 +1,10 @@
 <?php get_header() ?>
 
-
 <?php 
+
+	$presentation = new WP_Query(array(
+		'page_id' => 19
+	));
 
 	$project = new WP_query(array(
 		'post_type' => 'project',
@@ -18,9 +21,9 @@
 		</hgroup>
 		<div class="caption">
 			<h2>Qui sommes nous ?</h2>
-			<p>Créé fin 2011, nous avons besoin de vous !<br>
-				Nous situons notre action sur le long terme, aidez-nous !<br>
-				Plusieurs moyens sont possibles: Appui matériel, appui financier, appui technique, parler de nous.</p>
+			<?php if($presentation->have_posts()): $presentation->the_post(); ?>
+			<p><?php the_field('texte_dintroduction'); ?></p>
+			<?php endif; ?>
 			<div class="more">
 				<span><a href="<?php bloginfo('url') ?>">En savoir plus</a></span>
 			</div>
