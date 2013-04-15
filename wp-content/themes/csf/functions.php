@@ -4,6 +4,8 @@
 	
 	require_once(ABSPATH.'wp-content/themes/csf/types/team.php');
 
+	require_once(ABSPATH.'wp-content/themes/csf/types/atelier.php');
+
 	function no_comment_notes_after($defaults) {
     
 	    $defaults['comment_notes_after'] = '';
