@@ -23,7 +23,7 @@
         'show_ui' => true, 
         'show_in_menu' => true, 
         'query_var' => true,
-        'rewrite' => array( 'slug' => 'ateliers' ),
+        'rewrite' => array( 'slug' => 'atelier' ),
         'capability_type' => 'post',
         'has_archive' => true, 
         'hierarchical' => false,
