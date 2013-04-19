@@ -35,6 +35,14 @@
 	<section class="last-project container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
+				<div class="thumb span8">
+				<?php if(has_post_thumbnail()): ?>
+					<?php the_post_thumbnail('cover'); ?>
+				<?php else: ?>
+					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
+				<?php endif; ?>
+					<div class="clear"></div>
+				</div>
 				<article class="span4">
 					<h2><?php the_title(); ?></h2>
 					<?php if (get_field('quick_description')): ?>
@@ -48,14 +56,6 @@
 						<div class="clear"></div>
 					</div>
 				</article>
-				<div class="thumb span8">
-				<?php if(has_post_thumbnail()): ?>
-					<?php the_post_thumbnail('cover'); ?>
-				<?php else: ?>
-					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
-				<?php endif; ?>
-					<div class="clear"></div>
-				</div>
 			</div>
 		</div>
 	</section>

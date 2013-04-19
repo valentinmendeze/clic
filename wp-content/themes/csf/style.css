@@ -289,8 +289,8 @@ body .site .subhead-projectarchive h2 {
 
 body .site .project-list {
 	background: url(images/damier-bg.png);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 body .site .project-list .projectlist-caption {
