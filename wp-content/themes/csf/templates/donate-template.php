@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Accueil
+Template Name: Dons
 */
 ?>
 
@@ -16,18 +16,25 @@ Template Name: Accueil
 
 ?>
 
-	<section id="subhead" class="subhead subhead-project">
+	<section id="subhead" class="subhead subhead-donate">
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title">Les dons</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
-		<div class="caption">
-			<h2>Qui sommes nous ?</h2>
-			<?php if(have_posts()): the_post(); ?>
-			<p><?php the_field('texte_dintroduction'); ?></p>
-			<?php endif; ?>
-			<div class="more">
-				<span><a href="<?php bloginfo('url') ?>">En savoir plus</a></span>
+	</section>
+
+	<section class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span6">
+					<h2>Aidez-nous</h2>
+					<p>Lorem ipsum</p>
+				</div>				
+
+				<div class="span6">
+					<h2>Don matériel</h2>
+					<form>...</form>
+				</div>
 			</div>
 		</div>
 	</section>
