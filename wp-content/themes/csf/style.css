@@ -313,6 +313,72 @@ body .site .button-3 a {
 	color: #fff;
 }
 
+body .site .last-atelier {
+	background: #02cbb7;
+}
+
+body .site .last-atelier h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 26px;
+}
+
+body .site .last-atelier .span8 .picture {
+	float: left;
+	width:50%;
+	background: #000;
+	position: relative;
+}
+
+body .site .last-atelier .span8 .picture img {
+	position: relative;
+	z-index: 2;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;	
+}
+
+body .site .last-atelier .span8 .picture img:hover {
+	opacity: .4;
+	z-index: 0;
+}
+
+body .site .last-atelier .span8 .picture div {
+	position: absolute;
+	z-index: 1;
+	bottom: 30px;
+	text-align: center;
+}
+
+
+body .site .last-atelier .span8 .picture div h3{
+	color: #fff;
+	vertical-align: middle;
+	position: absolute;
+	min-width: 316px;
+	bottom: 30px;
+	margin: auto;
+}
+
+body .site .last-atelier a .discover {
+	text-align: center;
+	background: #ef8341;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 190px;
+	margin: 5px;
+	padding: 15px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+body .site .last-atelier a:hover {
+
+	color: #fff;
+}
+
 /* Page Liste des projets */
 
 body .site .subhead-projectarchive {

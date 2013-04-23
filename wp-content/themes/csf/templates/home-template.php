@@ -100,16 +100,40 @@ Template Name: Accueil
 
 	<?php endif; wp_reset_query(); ?>
 
-	<section class="container-fluid">
+	<section class="last-atelier container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="span8">
-
+					<div class="picture">
+						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
+						<div>
+							<h3>Salut</h3>
+						</div>
+					</div>
+					<div class="picture">
+						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
+						<div>
+							<h3>Salut</h3>
+						</div>
+					</div>
+					<div class="picture">
+						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
+						<div>
+							<h3>Salut</h3>
+						</div>
+					</div>
+					<div class="picture">
+						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
+						<div>
+							<h3>Salut</h3>
+						</div>
+					</div>
 				</div>
-				<div class="span4">
-					<h3>Les ateliers</h3>
+				<article class="span4">
+					<h2>Les ateliers</h2>
 					<p>Lorem ipsum...</p>
-				</div>
+					<a href="<?php the_field('donate-link'); ?>" title="Découvrir les ateliers"><div class="buttons discover">Découvrir les ateliers</div></a>
+				</article>
 			</div>
 		</div>
 	</section>
