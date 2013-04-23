@@ -28,7 +28,7 @@
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,
-    'menu_icon' =>  get_bloginfo('template_directory') . '/images/globe-icon.png',
+    'menu_icon' =>  get_bloginfo('template_directory') . '/images/icons/globe-icon.png',
     'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
   ); 
 

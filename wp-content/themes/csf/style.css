@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	background: #fff url(images/background.png);
+	background: #fff url(images/background/background.png);
 	border-top: 6px solid #02cbb7;
 	margin-top: 0;
 }
@@ -69,7 +69,7 @@ header ul li a {
 }
 
 header ul li:hover {
-	background-image: url(images/menu-active-right-bg.png), url(images/menu-active-left-bg.png), url(images/menu-active-bg.png);
+	background-image: url(images/background/menu-active-right-bg.png), url(images/background/menu-active-left-bg.png), url(images/background/menu-active-bg.png);
 	background-position: top right, top left, top center;
 	background-repeat: no-repeat;
 }
@@ -127,12 +127,12 @@ footer nav ul li a:hover {
 /* wrapper */
 
 .wrapper {
-	background: url(images/damier-bg.png);
+	background: url(images/background/damier-bg.png);
 }
 /* Accueil */
 
 body .site .subhead-project {
-	background: url(images/atelier-home.png) no-repeat;
+	background: url(images/background/atelier-home.png) no-repeat;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
@@ -258,12 +258,65 @@ body .site .last-project .thumb img{
 
 body .site .info {
 	background: #fff;
+	padding-top: 20px;
+}
+
+body .site .info .thumbnail {
+	border: none;
+	box-shadow: none;
+}
+
+body .site .info p {
+	color: #b1b1b1;
+	max-width: 200px;
+	margin: auto;
+	text-align: center;
+	min-height: 100px;
+}
+
+body .site .button-1 {
+	background: #6dc8d8;
+	width: 100px;
+	padding: 3px;
+	margin: auto;
+	border-radius: 3px;
+	text-align: center;
+}
+
+body .site .button-1 a {
+	color: #fff;
+}
+
+body .site .button-2 {
+	background: #f7c72f;
+	width: 100px;
+	padding: 3px;
+	margin: auto;
+	border-radius: 3px;
+	text-align: center;
+}
+
+body .site .button-2 a {
+	color: #fff;
+}
+
+body .site .button-3 {
+	background: #7ebb70;
+	width: 100px;
+	padding: 3px;
+	margin: auto;
+	border-radius: 3px;
+	text-align: center;
+}
+
+body .site .button-3 a {
+	color: #fff;
 }
 
 /* Page Liste des projets */
 
 body .site .subhead-projectarchive {
-	background: url(images/example3.png) no-repeat;
+	background: url(images/background/projet-list-bg.png) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -281,7 +334,7 @@ body .site .subhead-projectarchive h2 {
 }
 
 body .site .project-list {
-	background: url(images/damier-bg.png);
+	background: url(images/background/damier-bg.png);
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -346,7 +399,7 @@ body .site .project-list .projectlist-thumb img:hover {
 }
 
 body .site .project-finish {
-	background: url(images/damier-bg.png);
+	background: url(images/background/damier-bg.png);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -515,7 +568,7 @@ body .site .current-project aside .pdf {
 /* Page Liste des ateliers */
 
 body .site .subhead-atelierarchive {
-	background: url(images/atelier-bg.png) no-repeat;
+	background: url(images/background/atelier-bg.png) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -531,7 +584,7 @@ body .site .subhead-atelierarchive h1 {
 
 
 body .site .subhead-about {
-	background: url(images/example4.png) no-repeat;
+	background: url(images/background/about-bg.png) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -622,7 +675,7 @@ body .site .members .identity img {
 /* Page Dons */
 
 body .site .subhead-donate {
-	background: url(images/donate-bg.png) no-repeat;
+	background: url(images/background/donate-bg.png) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }

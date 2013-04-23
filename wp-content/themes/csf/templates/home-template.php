@@ -35,15 +35,35 @@ Template Name: Accueil
 	<section class="container-fluid info">
 		<div class="row-fluid">
 			<div class="span12">
-				<div class="span4">
-
-				</div>
-				<div class="span4">
-
-				</div>
-				<div class="span4">
-
-				</div>
+				<ul class="thumbnails">
+					<li class="span4">
+				    	<div class="thumbnail">
+				    		<img src="<?php bloginfo('template_url'); ?>/images/icons/icon-1.png" data-src="holder.js/300x200" alt="">
+				    		<p>Favoriser un usage éducatif et pédagogique des outils numériques pour tous</p>
+				    	</div>
+				    	<div class="button-1">
+					    	<a href="#" title="" class="">En savoir plus</a>
+				    	</div>
+					</li>
+					<li class="span4">
+				    	<div class="thumbnail">
+				    		<img src="<?php bloginfo('template_url'); ?>/images/icons/icon-2.png" data-src="holder.js/300x200" alt="">
+				    		<p>Réduire la fracture numérique en facilitant l'accès aux outils et à la culture numérique aux plus démunis</p>
+				    	</div>
+				    	<div class="button-2">
+					    	<a href="#" title="" class="">En savoir plus</a>
+				    	</div>
+					</li>
+					<li class="span4">
+				    	<div class="thumbnail">
+				    		<img src="<?php bloginfo('template_url'); ?>/images/icons/icon-3.png" data-src="holder.js/300x200" alt="">
+				    		<p>Participer à la diffusion des TIC comme moyens d'apprentissage et de développement</p>
+				    	</div>
+				    	<div class="button-3">
+					    	<a href="#" title="" class="">En savoir plus</a>
+				    	</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -79,5 +99,19 @@ Template Name: Accueil
 	</section>
 
 	<?php endif; wp_reset_query(); ?>
+
+	<section class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span8">
+
+				</div>
+				<div class="span4">
+					<h3>Les ateliers</h3>
+					<p>Lorem ipsum...</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <?php get_footer() ?>
