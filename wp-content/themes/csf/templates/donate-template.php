@@ -23,12 +23,14 @@ Template Name: Dons
 		</hgroup>
 	</section>
 
-	<section class="container-fluid">
+	<section class="donate container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="span6">
-					<h2>Aidez-nous</h2>
-					<p>Lorem ipsum</p>
+					<div class="help">
+						<h2>Aidez-nous</h2>
+						<p>Lorem ipsum</p>
+					</div>
 				</div>				
 
 				<div class="span6">
