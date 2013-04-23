@@ -133,7 +133,6 @@ footer nav ul li a:hover {
 
 body .site .subhead-project {
 	background: url(images/atelier-home.png) no-repeat;
-	margin-bottom: 10px;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
@@ -255,6 +254,10 @@ body .site .last-project .more {
 
 body .site .last-project .thumb img{
 	float: right;
+}
+
+body .site .info {
+	background: #fff;
 }
 
 /* Page Liste des projets */

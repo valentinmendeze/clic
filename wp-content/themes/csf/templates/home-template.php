@@ -32,6 +32,22 @@ Template Name: Accueil
 		</div>
 	</section>
 
+	<section class="container-fluid info">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span4">
+
+				</div>
+				<div class="span4">
+
+				</div>
+				<div class="span4">
+
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<?php if($project->have_posts()): $project->the_post(); ?>
 
 	<section class="last-project container-fluid">
@@ -39,9 +55,9 @@ Template Name: Accueil
 			<div class="span12">
 				<div class="thumb span8">
 				<?php if(has_post_thumbnail()): ?>
-					<?php the_post_thumbnail('cover'); ?>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
 				<?php else: ?>
-					<img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/example.png" title="<?php the_title(); ?>"></a>
 				<?php endif; ?>
 					<div class="clear"></div>
 				</div>
