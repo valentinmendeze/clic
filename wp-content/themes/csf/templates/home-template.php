@@ -27,7 +27,7 @@ Template Name: Accueil
 			<p><?php the_field('texte_dintroduction'); ?></p>
 			<?php endif; ?>
 			<div class="more">
-				<span><a href="<?php bloginfo('url') ?>">En savoir plus</a></span>
+				<span><a href="<?php echo get_permalink(97); ?>">En savoir plus</a></span>
 			</div>
 		</div>
 	</section>
