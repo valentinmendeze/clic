@@ -662,7 +662,33 @@ body .site .list-ateliers {
 
 body .site .list-ateliers ul li {
 	background: #02cbb7;
-	min-height: 600px;
+	min-height: 666px;
+}
+
+body .site .list-ateliers ul .ateliers-finis {
+	background: #666;
+}
+
+body .site .list-ateliers ul .ateliers-finis .last-thumb-title {
+	font-size: 28px;
+}
+
+body .site .list-ateliers ul .ateliers-finis .picture {
+	margin-top: 63px;
+	background: #000;
+}
+
+body .site .list-ateliers ul .ateliers-finis .picture img {
+	width: 50%;
+	float: left;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+}
+
+body .site .list-ateliers ul .ateliers-finis .picture img:hover {
+	opacity: .5;
 }
 
 body .site .list-ateliers ul li .thumbnail {
@@ -688,16 +714,39 @@ body .site .list-ateliers ul li .thumbnail h3 {
 	font-size: 20px;
 }
 
+body .site .list-ateliers ul li .thumbnail h3 a {
+	color: #fff;
+}
+
 body .site .list-ateliers ul li .thumbnail p {
 	margin-left: 20px;
 	margin-right: 20px;
 	padding-bottom: 20px;
-	min-height: 150px;
+	min-height: 190px;
 	border-bottom: 1px solid #fff;
 }
 
 body .site .list-ateliers ul li .thumbnail .infos li {
 	min-height: 0px;
+	margin-left: 0px;
+}
+
+body .site .list-ateliers ul li .thumbnail .infos .dated {
+	background: url(images/logo-debut.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
+}
+
+body .site .list-ateliers ul li .thumbnail .infos .datef {
+	background: url(images/logo-fin.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
+}
+
+body .site .list-ateliers ul li .thumbnail .infos .lieu {
+	background: url(images/logo-lieu.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
 }
 
 body .site .list-ateliers ul li .thumbnail .more {
@@ -706,6 +755,16 @@ body .site .list-ateliers ul li .thumbnail .more {
 	height: 100px;
 	background: url(images/more.png) no-repeat;
 	padding-top: 8px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+body .site .list-ateliers ul li .thumbnail .infos li .bold {
+	font-weight: bold;
+}
+
+body .site .list-ateliers ul li .thumbnail .more:hover {
+	color: #fff;
 }
 
 body .site .list-ateliers ul li .thumbnail .more span {
@@ -837,7 +896,7 @@ body .site .donate .help {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
 	.thumbnails li+li+li+li {
 		margin-left: 0px!important;
 	}
@@ -845,4 +904,23 @@ body .site .donate .help {
 	.thumbnails li+li+li+li+li {
 		margin-left: 2.127659574468085%!important;
 	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	body .site .list-ateliers ul li {
+			min-height: 800px;
+	}	
+
+	body .site .list-ateliers ul .ateliers-finis .picture {
+		margin-top: 23px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	body .site .list-ateliers ul li {
+			margin-left: 0px!important;
+	}	
 }
