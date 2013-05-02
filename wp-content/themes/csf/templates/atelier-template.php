@@ -10,7 +10,7 @@ Template Name: Ateliers
 
 	$atelier = new WP_query(array(
 		'post_type' => 'atelier',
-		'posts_per_page' => 10,
+		'posts_per_page' => 5,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'statut',
@@ -19,11 +19,6 @@ Template Name: Ateliers
 				'operator' => 'NOT IN',
 			)
 		)
-	));
-
-	$atelier_phare = new WP_query(array(
-		'post_type' => 'atelier',
-		'statut' => 'atelier-phare'
 	));
 
 	$atelier_fini = new WP_query(array(
@@ -40,30 +35,40 @@ Template Name: Ateliers
 		</hgroup>
 	</section>
 
-
-	<section class="project-list container-fluid">
+	<section class="list-ateliers scontainer-fluid">
 		<div class="row-fluid">
-			<div class="span12">
-				<div class="projectlist-caption span4">
-					<h2>Les ateliers en cours</h2>
-				</div>
-				<ul id="carouselTop" class="elastislide-list span8">
+			<ul class="thumbnails">
 				<?php if($atelier->have_posts()): while($atelier->have_posts()): $atelier->the_post(); ?>
-					<li>
-						<div class="projectlist-thumb">
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-							<div>
-								<h3><?php the_title(); ?></h3>
-							</div>
-						</div>
-					</li>
+				<li class="span4">
+					<div class="thumbnail">
+						<?php the_post_thumbnail('cover'); ?>
+						<h3><?php the_title(); ?></h3>
+						<?php the_excerpt(); ?>
+						<ul class="infos">
+							<li>Date de début :</li>
+							<li>Date de fin :</li>
+							<li>Lieu :</li>
+						</ul>
+						<a href="<?php the_permalink(); ?>" title="Découvrir l'atelier" class="more"><span>Découvrir l'atelier</span></a>
+					</div>
+				</li>
 				<?php endwhile; endif; ?>
-				</ul>
-			</div>
+				<li class="span4">
+					<div class="thumbnail">
+						<img data-src="holder.js/300x200" alt="">
+						<h3>Thumbnail label</h3>
+						<p>Thumbnail caption...</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 
-	<?php if($atelier_phare->have_posts()): $atelier_phare->the_post(); ?>
+	<?php wp_reset_query(); ?>
+
+<?php get_footer(); ?>
+
+	<!--<?php if($atelier_phare->have_posts()): $atelier_phare->the_post(); ?>
 
 	<section class="last-project container-fluid">
 		<div class="row-fluid">
@@ -93,30 +98,4 @@ Template Name: Ateliers
 		</div>
 	</section>
 
-	<?php endif; ?>
-
-	<section class="project-finish container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="projectfinish-caption span4">
-					<h2>Les ateliers terminés</h2>
-				</div>
-				<ul id="carouselBottom" class="elastislide-list span8">
-				<?php if($atelier_fini->have_posts()): while($atelier_fini->have_posts()): $atelier_fini->the_post(); ?>
-					<li>
-						<div class="projectlist-thumb">
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-							<div>
-								<h3><?php the_title(); ?></h3>
-							</div>
-						</div>
-					</li>
-				<?php endwhile; endif; ?>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<?php wp_reset_query(); ?>
-
-<?php get_footer(); ?>
+	<?php endif; ?>-->

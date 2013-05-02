@@ -19,9 +19,19 @@ body {
 	clear: both;
 }
 
+/* Config Bootstrap */
+
 .container-fluid {
 	padding-left: 0!important;
 	padding-right: 0!important;
+}
+
+.thumbnails li+li+li+li {
+	margin-left: 0px!important;
+}
+
+.thumbnails li+li+li+li+li {
+	margin-left: 2.564102564102564%!important;
 }
 
 /* #page (Container) */
@@ -646,6 +656,62 @@ body .site .subhead-atelierarchive h1 {
 	margin-top: 100px;
 }
 
+body .site .list-ateliers {
+	padding-top: 10px;
+}
+
+body .site .list-ateliers ul li {
+	background: #02cbb7;
+	min-height: 600px;
+}
+
+body .site .list-ateliers ul li .thumbnail {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+body .site .list-ateliers ul li .thumbnail {
+	padding: 0px;
+}
+
+body .site .list-ateliers ul li .thumbnail img {
+	width: 100%;
+}
+
+body .site .list-ateliers ul li .thumbnail h3 {
+	padding-top: 10px;
+	padding-left: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+body .site .list-ateliers ul li .thumbnail p {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 20px;
+	min-height: 150px;
+	border-bottom: 1px solid #fff;
+}
+
+body .site .list-ateliers ul li .thumbnail .infos li {
+	min-height: 0px;
+}
+
+body .site .list-ateliers ul li .thumbnail .more {
+	display: block;
+	width: 100%;
+	height: 100px;
+	background: url(images/more.png) no-repeat;
+	padding-top: 8px;
+}
+
+body .site .list-ateliers ul li .thumbnail .more span {
+	margin-left: 50px;
+}
+
 /* Page A propos */
 
 
@@ -768,4 +834,15 @@ body .site .donate .help {
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	margin-left: 10px;
 	padding: 10px 20px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.thumbnails li+li+li+li {
+		margin-left: 0px!important;
+	}
+
+	.thumbnails li+li+li+li+li {
+		margin-left: 2.127659574468085%!important;
+	}
 }
