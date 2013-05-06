@@ -5,4 +5,6 @@
 	<?php the_content(); ?>
 <?php endif; ?>
 
+	<?php comments_template(); ?>
+
 <?php get_footer(); ?>
