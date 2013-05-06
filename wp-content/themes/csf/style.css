@@ -323,6 +323,57 @@ body .site .button-3 a {
 	color: #fff;
 }
 
+body .site .articles {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body .site .articles h2 {
+	text-transform: uppercase;
+	color: #02cbb7;
+	margin-left: 30px;
+	font-size: 24px;
+}
+
+body .site .articles .thumbnails {
+	margin-left: 25%;
+}
+
+body .site .articles .thumbnails li {
+	background: #fff;
+}
+
+body .site .articles .thumbnails li .thumbnail {
+	box-shadow:  0px 0px 1px #aaa;
+	border-radius: 0px;
+	text-align: center;
+	min-height: 400px;
+}
+
+body .site .articles .thumbnails li .thumbnail h3 {
+	color: #02cbb7;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 22px;
+}
+
+body .site .articles .thumbnails li .thumbnail p {
+	color: #b1b1b1;
+}
+
+body .site .articles .thumbnails li .thumbnail a {
+	color: #02cbb7;
+}
+
+body .site .articles .thumbnails li .thumbnail .more {
+	background: url(images/more.png) no-repeat 30px 0px;
+	display: block;
+	width: 100px;
+	margin: auto;
+	padding-top: 35px;
+	color: #02cbb7;
+}
+
 body .site .last-atelier {
 	background: #02cbb7;
 }
@@ -366,7 +417,6 @@ body .site .last-atelier .span8 .picture div h3{
 	color: #fff;
 	vertical-align: middle;
 	position: absolute;
-	min-width: 316px;
 	bottom: 30px;
 	margin: auto;
 }
@@ -569,11 +619,15 @@ body .site .current-project {
 	margin-top: -10px;
 }
 
+body .site .current-project .span12 {
+	padding-left: 20px;
+}
+
 body .site .current-project article {
 	padding: 20px 25px;
 	margin-bottom: 15px;
 	background: #fff;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 
 body .site .current-project article h2 {
@@ -616,7 +670,7 @@ body .site .current-project aside h2 {
 }
 
 body .site .current-project aside ul {
-	margin-left: 50px;
+	margin-left: 20px;
 }
 
 body .site .current-project aside li {
@@ -624,21 +678,34 @@ body .site .current-project aside li {
 	margin-bottom: 10px;
 }
 
-body .site .current-project aside .date-debut {
-	list-style-image: url(images/logo-debut.png);
+body .site .current-project aside .dated {
+	background: url(images/logo-debut.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
 }
-body .site .current-project aside .date-fin {
-	list-style-image: url(images/logo-fin.png);
 
+body .site .current-project aside .datef {
+	background: url(images/logo-fin.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
 }
+
 body .site .current-project aside .lieu {
-	list-style-image: url(images/logo-lieu.png);	
+	background: url(images/logo-lieu.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
 }
+
 body .site .current-project aside .cout {
-	list-style-image: url(images/logo-euro.png);
+	background: url(images/logo-euro.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
 }
+
 body .site .current-project aside .pdf {
-	list-style-image: url(images/logo-pdf.png);
+	background: url(images/logo-pdf.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;	
 }
 
 /* Page Liste des ateliers */
@@ -922,5 +989,9 @@ body .site .donate .help {
 
 	body .site .list-ateliers ul li {
 			margin-left: 0px!important;
-	}	
+	}
+
+	body .site .articles .thumbnails {
+		margin-left: 0;
+	}
 }

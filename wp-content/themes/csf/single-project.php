@@ -48,11 +48,11 @@
 					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
-						<li class="date-debut">Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
-						<li class="date-fin">Date de fin:  <?php echo $datef->format('d/m/Y');; ?></li>
+						<li class="dated">Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
+						<li class="datef">Date de fin:  <?php echo $datef->format('d/m/Y'); ?></li>
 						<li class="lieu">Lieu: <?php the_field('lieu-projet'); ?></li>
 						<li class="cout">Coût du projet: <?php the_field('cout-projet'); ?></li>
-						<li class="pdf">Informations projet: <a href="<?php the_field("dossier_du_projet");?>">Télécharger</a></li>
+						<li class="pdf">Informations projet: <a href="<?php the_field("dossier_du_projet");?>" title="Informations complémentaires">Télécharger</a></li>
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>

@@ -14,6 +14,22 @@ Template Name: Accueil
 		'statut' => 'projets-phares'
 	));
 
+	$ateliers = new WP_query(array(
+		'post_type' => 'atelier',
+		'posts_per_page' => 4,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'statut',
+				'field' => 'slug',
+				'terms' => 'atelier-termine',
+				'operator' => 'NOT IN',
+			)
+		)
+	));
+
+	$recentPosts = new WP_Query();
+    $recentPosts->query('showposts=2');
+
 ?>
 
 	<section id="subhead" class="subhead subhead-project">
@@ -98,44 +114,50 @@ Template Name: Accueil
 		</div>
 	</section>
 
-	<?php endif; wp_reset_query(); ?>
+	<?php endif; ?>
+
+	<section class="articles container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<h2>Les derniers articles</h2>
+				<ul class="thumbnails">
+					<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+					<li class="span4">
+						<div class="thumbnail">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
+							<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+							<p><?php the_excerpt(); ?></p>
+							<a href="<?php the_permalink(); ?>" class="more" title="<?php the_title(); ?>">Lire la suite...</a>
+						</div>
+					</li>
+					<?php endwhile; ?>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 	<section class="last-atelier container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="span8">
+					<?php if($ateliers->have_posts()): while($ateliers->have_posts()): $ateliers->the_post(); ?>
 					<div class="picture">
-						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
 						<div>
-							<h3>Salut</h3>
+							<h3><?php the_title(); ?></h3>
 						</div>
 					</div>
-					<div class="picture">
-						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
-						<div>
-							<h3>Salut</h3>
-						</div>
-					</div>
-					<div class="picture">
-						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
-						<div>
-							<h3>Salut</h3>
-						</div>
-					</div>
-					<div class="picture">
-						<a href="#" title="yo"><img src="http://localhost:8888/clic/wp-content/uploads/2013/04/IMG_23392-650x350.jpg" alt="pwit"></a>
-						<div>
-							<h3>Salut</h3>
-						</div>
-					</div>
+					<?php endwhile; endif; ?>
 				</div>
 				<article class="span4">
 					<h2>Les ateliers</h2>
 					<p>Lorem ipsum...</p>
-					<a href="<?php the_field('donate-link'); ?>" title="Découvrir les ateliers"><div class="buttons discover">Découvrir les ateliers</div></a>
+					<a href="<?php bloginfo( 'url' ) ?>/ateliers" title="Découvrir les ateliers"><div class="buttons discover">Découvrir les ateliers</div></a>
 				</article>
 			</div>
 		</div>
 	</section>
+
+	<?php wp_reset_query(); ?>
 
 <?php get_footer() ?>
