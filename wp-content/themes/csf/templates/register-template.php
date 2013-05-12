@@ -39,8 +39,6 @@ if (!empty($_POST['user_login']) && !empty($_POST['user_email']) && !empty($_POS
 	} else {
 		$error = 'Je ne suis pas certain que 2 + 3 soit égal à ' . $d['antibot'];
 	}
-} else {
-	$error = 'Veuillez remplir les champs d\'inscription avant de valider';
 }
 
 get_header(); ?>
