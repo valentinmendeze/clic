@@ -33,10 +33,10 @@ Template Name: Accueil
 ?>
 
 	<section id="subhead" class="subhead subhead-project">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+		</div>
 		<div class="caption">
 			<h2>Qui sommes nous ?</h2>
 			<?php if(have_posts()): the_post(); ?>
@@ -126,7 +126,7 @@ Template Name: Accueil
 						<div class="thumbnail">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
 							<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-							<p><?php the_excerpt(); ?></p>
+							<?php the_excerpt(); ?>
 							<a href="<?php the_permalink(); ?>" class="more" title="<?php the_title(); ?>">Lire la suite...</a>
 						</div>
 					</li>

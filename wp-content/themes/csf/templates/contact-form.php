@@ -8,10 +8,10 @@ Template Name: Contact Form
 <?php get_header(); ?>
 
 	<section id="subhead" class="subhead subhead-contact">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title">Contact</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+		</div>
 	</section>
 
 	<section class="contact container-fluid">

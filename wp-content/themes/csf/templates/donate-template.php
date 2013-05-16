@@ -17,10 +17,10 @@ Template Name: Dons
 ?>
 
 	<section id="subhead" class="subhead subhead-donate">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title">Les dons</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+		</div>
 	</section>
 
 	<section class="donate container-fluid">

@@ -16,9 +16,9 @@ Template Name: A propos
 <?php get_header(); ?>
 
 	<section id="subhead" class="subhead subhead-about">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title">à propos de nous</h1>
-		</hgroup>
+		</div>
 	</section>
 
 	<section class="presentation container-fluid">

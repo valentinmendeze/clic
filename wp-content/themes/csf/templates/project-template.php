@@ -35,9 +35,9 @@ Template Name: Page Projets
 ?>
 
 	<section id="subhead" class="subhead subhead-projectarchive">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title">Les projets</h1>
-		</hgroup>
+		</div>
 	</section>
 
 
@@ -95,6 +95,8 @@ Template Name: Page Projets
 
 	<?php endif; ?>
 
+	<?php if($projet_fini->have_posts()): ?>
+
 	<section class="project-finish container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
@@ -102,7 +104,7 @@ Template Name: Page Projets
 					<h2>Les projets terminés</h2>
 				</div>
 				<ul id="carouselBottom" class="elastislide-list span8">
-				<?php if($projet_fini->have_posts()): while($projet_fini->have_posts()): $projet_fini->the_post(); ?>
+				<?php while($projet_fini->have_posts()): $projet_fini->the_post(); ?>
 					<li>
 						<div class="projectlist-thumb">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
@@ -111,11 +113,13 @@ Template Name: Page Projets
 							</div>
 						</div>
 					</li>
-				<?php endwhile; endif; ?>
+				<?php endwhile; ?>
 				</ul>
 			</div>
 		</div>
 	</section>
+
+	<?php endif; ?>
 
 	<?php wp_reset_query(); ?>
 

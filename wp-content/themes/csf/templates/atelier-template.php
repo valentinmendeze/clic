@@ -30,10 +30,10 @@ Template Name: Ateliers
 ?>
 
 	<section id="subhead" class="subhead subhead-atelierarchive">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title">Les ateliers</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+		</div>
 	</section>
 
 	<section class="list-ateliers scontainer-fluid">
