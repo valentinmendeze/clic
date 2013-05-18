@@ -136,7 +136,7 @@ Template Name: Accueil
 		</div>
 	</section>
 
-	<section class="last-atelier container-fluid">
+	<!--<section class="last-atelier container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="span8">
@@ -156,7 +156,7 @@ Template Name: Accueil
 				</article>
 			</div>
 		</div>
-	</section>
+	</section>-->
 
 	<?php wp_reset_query(); ?>
 

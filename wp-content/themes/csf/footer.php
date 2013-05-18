@@ -10,7 +10,7 @@
 				<div class="link span4">
 					<h3>partenaires</h3>
 				</div>
-				<div class="contact span4">
+				<div class="contact-footer span4">
 					<h3>contact</h3>
 				</div>
 			</div>
