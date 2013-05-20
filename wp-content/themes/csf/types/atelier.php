@@ -64,6 +64,6 @@
         'rewrite'                 => array( 'slug' => 'projets' )
     );
 
-    register_taxonomy( 'statut', 'atelier', $args );
+    register_taxonomy( 'statut', array('atelier', 'project'), $args );
 
 ?>

@@ -12,9 +12,9 @@
 	</style>
 
 	<section id="subhead" class="subhead subhead-single-project">
-		<hgroup>
+		<div class="hgroup">
 			<h1 class="site-title"><?php the_title(); ?></h1>
-		</hgroup>
+		</div>
 	</section>
 
 	<section class="breadcrumb-single-project">
@@ -48,11 +48,21 @@
 					<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 					<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 					<ul>
+						<?php if(get_field('date_de_commencement')): ?>
 						<li class="dated">Date de début: <?php echo $dated->format('d/m/Y'); ?></li>
+						<?php endif; ?>
+						<?php if(get_field('date_de_fin')): ?>
 						<li class="datef">Date de fin:  <?php echo $datef->format('d/m/Y'); ?></li>
+						<?php endif; ?>
+						<?php if(get_field('lieu-projet')): ?>
 						<li class="lieu">Lieu: <?php the_field('lieu-projet'); ?></li>
+						<?php endif; ?>
+						<?php if(get_field('cout-projet')): ?>
 						<li class="cout">Coût du projet: <?php the_field('cout-projet'); ?></li>
-						<li class="pdf">Informations projet: <a href="<?php the_field("dossier_du_projet");?>" title="Informations complémentaires">Télécharger</a></li>
+						<?php endif; ?>
+						<?php if(get_field("dossier_du_projet")): ?>
+						<li class="pdf">Informations projet: <a href="<?php the_field("dossier_du_projet"); ?>" title="Informations complémentaires">Télécharger</a></li>
+						<?php endif; ?>
 					</ul>
 				</aside>
 				<?php //comments_template( '', true ); ?>

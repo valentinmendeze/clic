@@ -48,9 +48,15 @@ Template Name: Ateliers
 						<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 						<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 						<ul class="infos">
+							<?php if(get_field('date_de_commencement')): ?>
 							<li class="dated">Date de début : <span class="bold"><?php echo $dated->format('d/m/Y'); ?></span></li>
+							<?php endif; ?>
+							<?php if(get_field('date_de_fin')): ?>
 							<li class="datef">Date de fin : <span class="bold"><?php echo $datef->format('d/m/Y'); ?></span></li>
+							<?php endif; ?>
+							<?php if(get_field('lieu_de_latelier')): ?>
 							<li class="lieu">Lieu : <span class="bold"><?php the_field('lieu_de_latelier') ?></span></li>
+							<?php endif; ?>
 						</ul>
 						<a href="<?php the_permalink(); ?>" title="Découvrir l'atelier" class="more"><span>Découvrir l'atelier</span></a>
 					</div>

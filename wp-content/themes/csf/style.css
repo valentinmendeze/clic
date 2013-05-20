@@ -1051,10 +1051,43 @@ body .site .contact .contact-content form p {
 }
 
 /* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {
+
+	body header {
+		text-align: center;
+	}
+
+	body header img {
+		width: 100px;
+	}
+
+	body header ul {
+		margin: 0;
+	}
+
+	body header ul li {
+		border-top: 1px solid #ddd;
+		float: none;
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	body header ul li:hover {
+		background: #eee;
+	}
+
+	body header .logo {
+		display: none;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 
 	body .site .list-ateliers ul li {
-			min-height: 800px;
+		min-height: 800px;
 	}	
 
 	body .site .list-ateliers ul .ateliers-finis .picture {
@@ -1093,6 +1126,14 @@ body .site .contact .contact-content form p {
 
 	/* Index Last Projects */
 
+	body .site .last-project .thumb {
+		text-align: center;
+	}
+
+	body .site .last-project .thumb img {
+		float: none;
+	}
+
 	body .site .last-project h2, p {
 		text-align: center;
 	}
@@ -1104,6 +1145,22 @@ body .site .contact .contact-content form p {
 
 	body .site .last-project .buttons, .discover {
 		margin: auto;
+	}
+
+	/* Page Projets */
+
+	body .site .project-list {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	body .site .project-list .span12 {
+		background: rgb(2, 139, 203);
+	}
+
+	body .site .project-list .projectlist-caption {
+		height: 110px;
+		padding-top: 1px;
 	}
 
 	/* FOOTER */

@@ -101,7 +101,8 @@
 
 .elastislide-horizontal nav span {
 	top: 50%;
-	left: 260px;
+	/*left: 260px;*/
+	left: 27%;
 	margin-top: -11px;
 	z-index: 2;
 }
@@ -123,4 +124,11 @@
 	bottom: 10px;
 	top: auto;
 	background-position: -17px -18px;
+}
+
+@media (max-width: 767px) {
+
+	.elastislide-horizontal nav span {
+		left: 10px;
+	}
 }

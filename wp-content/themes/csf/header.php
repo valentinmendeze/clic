@@ -19,7 +19,13 @@
 <div id="page" class="hfeed site container">
 	<header id="masthead" class="site-header" role="banner">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation visible-desktop" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			<div class="clear"></div>
+		</nav><!-- #site-navigation -->
+
+		<nav id="site-navigation-mobile" class="main-navigation hidden-desktop" role="navigation">
+			<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo3.png" alt="Clic Sans Frontières Logo Png"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 			<div class="clear"></div>
 		</nav><!-- #site-navigation -->
