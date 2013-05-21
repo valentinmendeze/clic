@@ -34,7 +34,7 @@
 
     register_post_type( 'atelier', $args );
 
-    add_action( 'init', 'register_project' );
+    //add_action( 'init', 'register_project' );
 
     $labels = array(
         'name'                         => 'Statuts',

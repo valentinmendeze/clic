@@ -727,6 +727,11 @@ body .site .list-ateliers {
 	padding-top: 10px;
 }
 
+body .site .list-ateliers .thumbnails {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 body .site .list-ateliers ul li {
 	background: #02cbb7;
 	min-height: 666px;
@@ -883,9 +888,15 @@ body .site .members {
 }
 
 body .site .members h2 {
+	margin-left: 25px;
 	color: #02cbb7;
 	text-transform: uppercase;
 	font-size: 20px;
+}
+
+body .site .members .span12 {
+	margin-right: 25px;
+	margin-left: 25px;
 }
 
 body .site .members .portrait {
@@ -1172,5 +1183,20 @@ body .site .contact .contact-content form p {
 	footer .span4 {
 		padding-right: 20px;
 		padding-left: 20px;
+	}
+
+	/* CONTACT */
+
+	body .site .contact .contact-content {
+		padding-left: 0px;
+	}
+
+	body .site .contact .contact-content h3 {
+		text-align: center;
+	}
+
+	body .site .contact .contact-content p {
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 }

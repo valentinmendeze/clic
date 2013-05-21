@@ -34,6 +34,6 @@
 
     register_post_type( 'project', $args );
 
-    add_action( 'init', 'register_project' );
+    //add_action( 'init', 'register_project' );
 
 ?>
