@@ -739,13 +739,15 @@ body .site .list-ateliers ul li {
 
 body .site .list-ateliers ul .ateliers-finis {
 	background: #666;
+	min-height: 160px!important;
+	max-height: 160px;
 }
 
 body .site .list-ateliers ul .ateliers-finis .last-thumb-title {
 	font-size: 28px;
 }
 
-body .site .list-ateliers ul .ateliers-finis .picture {
+/*body .site .list-ateliers ul .ateliers-finis .picture {
 	margin-top: 63px;
 	background: #000;
 }
@@ -761,6 +763,12 @@ body .site .list-ateliers ul .ateliers-finis .picture img {
 
 body .site .list-ateliers ul .ateliers-finis .picture img:hover {
 	opacity: .5;
+}*/
+
+body .site .list-ateliers ul .ateliers-finis .more {
+	background: url(images/more-white.png) no-repeat !important;
+	padding-left: 40px;
+	font-size: 12px;
 }
 
 body .site .list-ateliers ul li .thumbnail {
@@ -840,6 +848,103 @@ body .site .list-ateliers ul li .thumbnail .more:hover {
 }
 
 body .site .list-ateliers ul li .thumbnail .more span {
+	margin-left: 50px;
+}
+
+/* Page Liste des ateliers terminés */
+
+body .site .list-ateliers-termines {
+	padding-top: 10px;
+}
+
+body .site .list-ateliers-termines .thumbnails {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+body .site .list-ateliers-termines ul li {
+	background: url(images/background/ateliers-termines-bg.png);
+}
+
+body .site .list-ateliers-termines ul li .thumbnail {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail {
+	padding: 0px;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail p {
+	color: #222;
+	padding-left: 20px;
+	padding-right: 10px;	
+}
+
+body .site .list-ateliers-termines ul li .thumbnail a {
+	color: #222;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail a:hover {
+	color: #222!important;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail img {
+	width: 100%;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail h3 {
+	padding-top: 10px;
+	padding-left: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail ul li {
+	color: #222;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .infos .dated {
+	background: url(images/logo-debut-black.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .infos .datef {
+	background: url(images/logo-fin-black.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .infos .lieu {
+	background: url(images/logo-lieu-black.png) no-repeat left top;
+	padding: 5px 0px 3px 40px;
+	display: block;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .more {
+	display: block;
+	width: 100%;
+	height: 30px;
+	background: url(images/more-black.png) no-repeat;
+	padding-top: 8px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+body .site .list-ateliers-termines ul li .thumbnail .infos li .bold {
+	font-weight: bold;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .more:hover {
+	color: #fff;
+}
+
+body .site .list-ateliers-termines ul li .thumbnail .more span {
 	margin-left: 50px;
 }
 
