@@ -956,6 +956,10 @@ body .site .subhead-donate h1 {
 	margin-top: 100px;
 }
 
+body .site .donate {
+	margin-top: 10px
+}
+
 body .site .donate h2 {
 	color: #02cbb7;
 	font-size: 22px;
@@ -971,6 +975,41 @@ body .site .donate .help {
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	margin-left: 10px;
 	padding: 10px 20px;
+}
+
+body .site .donate form {
+	margin-top: 30px;
+}
+
+body .site .donate form input[type=text], input[type=email], textarea {
+	position: relative;
+	bottom: 25px;
+	left: 230px;
+	border: 2px solid #a19fa0!important;
+	border-radius: 0px!important;
+}
+
+body .site .donate form textarea {
+	height: 120px;
+}
+
+body .site .donate form input[type=submit] {
+	position: relative;
+	left: 230px;
+	background: #ef8341;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+body .site .donate form p {
+	color: #ef8341;
+	font-weight: bold;
+	text-transform: uppercase;
+	min-width: 20px;
 }
 
 /* Page Contact */

@@ -24,21 +24,23 @@ Template Name: Dons
 	</section>
 
 	<section class="donate container-fluid">
+		<?php if(have_posts()): the_post(); ?>
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="span6">
 					<div class="help">
 						<h2>Aidez-nous</h2>
-						<p>Lorem ipsum</p>
+						<p><?php the_content(); ?></p>
 					</div>
 				</div>				
 
 				<div class="span6">
 					<h2>Don matériel</h2>
-					<form>...</form>
+					<?php echo do_shortcode('[contact-form-7 id="175" title="Dons"]'); ?>
 				</div>
 			</div>
 		</div>
+		<?php endif; ?>
 	</section>
 
 	<?php if($project->have_posts()): $project->the_post(); ?>
