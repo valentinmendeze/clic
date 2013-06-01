@@ -40,7 +40,7 @@ Template Name: Accueil
 		<div class="caption">
 			<h2>Qui sommes nous ?</h2>
 			<?php if(have_posts()): the_post(); ?>
-			<p><?php the_field('texte_dintroduction'); ?></p>
+			<p><?php the_content(); ?></p>
 			<?php endif; ?>
 			<div class="more">
 				<span><a href="<?php echo get_permalink(97); ?>">En savoir plus</a></span>
@@ -135,28 +135,6 @@ Template Name: Accueil
 			</div>
 		</div>
 	</section>
-
-	<!--<section class="last-atelier container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="span8">
-					<?php if($ateliers->have_posts()): while($ateliers->have_posts()): $ateliers->the_post(); ?>
-					<div class="picture">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
-						<div>
-							<h3><?php the_title(); ?></h3>
-						</div>
-					</div>
-					<?php endwhile; endif; ?>
-				</div>
-				<article class="span4">
-					<h2>Les ateliers</h2>
-					<p>Lorem ipsum...</p>
-					<a href="<?php bloginfo( 'url' ) ?>/ateliers" title="Découvrir les ateliers"><div class="buttons discover">Découvrir les ateliers</div></a>
-				</article>
-			</div>
-		</div>
-	</section>-->
 
 	<?php wp_reset_query(); ?>
 

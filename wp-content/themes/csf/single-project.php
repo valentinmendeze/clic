@@ -30,16 +30,17 @@
 			<div class="span12">
 				<article class="span8">
 					<h2>Le projet</h2>
+					<?php echo do_shortcode('[fb_button]'); ?>
 					<?php the_content(); ?>
 					<blockquote class="pull-right">
 						<small>Rédigé par <?php the_author() ?>, le <?php the_date(); ?></small>
 					</blockquote>
-					<ul class="project-link">
+					<div class="project-link">
+						<a href="<?php echo get_permalink(7); ?>" class="back">Revenir aux projets</a>
 					<?php if (get_field('donate-link')): ?>
-						<li><a href="<?php the_field('donate-link'); ?>">Faire un don</a></li>
+						<a href="<?php the_field('donate-link'); ?>" class="donate">Faire un don</a>
 					<?php endif; ?>
-						<li><a href="<?php echo get_permalink(7); ?>">Revenir aux projets</a></li>
-					</ul>
+					</div>
 					<div class="clear"></div>
 				</article>
 				<aside class="span4">

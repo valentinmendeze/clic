@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo( 'name' ); ?><?php wp_title(); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/elastislide.css" />
@@ -25,7 +26,7 @@
 		</nav><!-- #site-navigation -->
 
 		<nav id="site-navigation-mobile" class="main-navigation hidden-desktop" role="navigation">
-			<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo3.png" alt="Clic Sans Frontières Logo Png"></a>
+			<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo3.png" id="logo" alt="Clic Sans Frontières Logo Png"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 			<div class="clear"></div>
 		</nav><!-- #site-navigation -->

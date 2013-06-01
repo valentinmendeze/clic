@@ -45,13 +45,13 @@ Template Name: Ateliers
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('cover'); ?></a>
 						<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
-						<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
-						<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 						<ul class="infos">
 							<?php if(get_field('date_de_commencement')): ?>
+							<?php $dated = DateTime::createFromFormat('Ymd', get_field('date_de_commencement')); ?>
 							<li class="dated">Date de début : <span class="bold"><?php echo $dated->format('d/m/Y'); ?></span></li>
 							<?php endif; ?>
 							<?php if(get_field('date_de_fin')): ?>
+							<?php $datef = DateTime::createFromFormat('Ymd', get_field('date_de_fin')); ?>
 							<li class="datef">Date de fin : <span class="bold"><?php echo $datef->format('d/m/Y'); ?></span></li>
 							<?php endif; ?>
 							<?php if(get_field('lieu_de_latelier')): ?>

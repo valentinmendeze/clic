@@ -24,8 +24,26 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 	<!-- jQuery Parallax -->
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.parallax-1.1.3.js"></script>
+	<!-- jRumble -->
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.jrumble.1.3.min.js"></script>
 
 	<script>
+		$('#logo').jrumble();
+
+		$('#logo').hover(function(){
+			$(this).trigger('startRumble');
+		}, function(){
+			$(this).trigger('stopRumble');
+		});
+
+		$('.logo').jrumble();
+
+		$('.logo').hover(function(){
+			$(this).trigger('startRumble');
+		}, function(){
+			$(this).trigger('stopRumble');
+		});
+
 		$(document).ready(function(){		
 	        $('#subhead').parallax("center", -.4);
 	    })
