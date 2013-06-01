@@ -13,7 +13,7 @@ $recentPosts->query('showposts=6&paged=' . $paged);
 
 	<section id="subhead" class="subhead subhead-listarticles">
 		<div class="hgroup">
-			<h1 class="site-title">Les ateliers</h1>
+			<h1 class="site-title">Les articles</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 	</section>

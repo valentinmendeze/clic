@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Sam 01 Juin 2013 à 22:04
+-- Généré le: Sam 01 Juin 2013 à 22:09
 -- Version du serveur: 5.5.25
 -- Version de PHP: 5.4.4
 
@@ -320,7 +320,7 @@ CREATE TABLE `wpclic_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=754 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=765 ;
 
 --
 -- Contenu de la table `wpclic_postmeta`
@@ -653,14 +653,6 @@ INSERT INTO `wpclic_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) V
 (647, 167, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (648, 167, '_menu_item_xfn', ''),
 (649, 167, '_menu_item_url', ''),
-(651, 168, '_menu_item_type', 'post_type'),
-(652, 168, '_menu_item_menu_item_parent', '0'),
-(653, 168, '_menu_item_object_id', '2'),
-(654, 168, '_menu_item_object', 'page'),
-(655, 168, '_menu_item_target', ''),
-(656, 168, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(657, 168, '_menu_item_xfn', ''),
-(658, 168, '_menu_item_url', ''),
 (660, 169, '_edit_last', '1'),
 (661, 169, '_edit_lock', '1368925014:1'),
 (662, 169, '_thumbnail_id', '92'),
@@ -737,7 +729,17 @@ INSERT INTO `wpclic_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) V
 (748, 198, '_thumbnail_id', '185'),
 (750, 200, '_edit_last', '1'),
 (751, 200, '_edit_lock', '1370115515:1'),
-(752, 200, '_thumbnail_id', '185');
+(752, 200, '_thumbnail_id', '185'),
+(754, 2, '_wp_trash_meta_status', 'publish'),
+(755, 2, '_wp_trash_meta_time', '1370117236'),
+(756, 204, '_menu_item_type', 'post_type'),
+(757, 204, '_menu_item_menu_item_parent', '0'),
+(758, 204, '_menu_item_object_id', '180'),
+(759, 204, '_menu_item_object', 'page'),
+(760, 204, '_menu_item_target', ''),
+(761, 204, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(762, 204, '_menu_item_xfn', ''),
+(763, 204, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
@@ -774,7 +776,7 @@ CREATE TABLE `wpclic_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=203 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=205 ;
 
 --
 -- Contenu de la table `wpclic_posts`
@@ -782,10 +784,10 @@ CREATE TABLE `wpclic_posts` (
 
 INSERT INTO `wpclic_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2013-03-18 14:42:52', '2013-03-18 14:42:52', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous !', 'Bonjour tout le monde&nbsp;!', '', 'publish', 'open', 'open', '', 'bonjour-tout-le-monde', '', '', '2013-06-01 19:01:16', '2013-06-01 18:01:16', '', 0, 'http://localhost:8888/clic/?p=1', 0, 'post', '', 1),
-(2, 1, '2013-03-18 14:42:52', '2013-03-18 14:42:52', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu''elle restera à la même place, et s''affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\r\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J''habite à Bordeaux, j''ai un super chien baptisé Russell, et j''aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\r\n...ou bien quelque chose comme ça :\r\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n''a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\r\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost:8888/clic/wp-admin/">tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Présentation', '', 'publish', 'open', 'open', '', 'page-d-exemple', '', '', '2013-03-18 17:03:27', '2013-03-18 16:03:27', '', 0, 'http://localhost:8888/clic/?page_id=2', 0, 'page', '', 0),
+(2, 1, '2013-03-18 14:42:52', '2013-03-18 14:42:52', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu''elle restera à la même place, et s''affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\r\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J''habite à Bordeaux, j''ai un super chien baptisé Russell, et j''aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\r\n...ou bien quelque chose comme ça :\r\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n''a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\r\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost:8888/clic/wp-admin/">tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Présentation', '', 'trash', 'open', 'open', '', 'page-d-exemple', '', '', '2013-06-01 21:07:16', '2013-06-01 20:07:16', '', 0, 'http://localhost:8888/clic/?page_id=2', 0, 'page', '', 0),
 (7, 1, '2013-03-18 15:52:09', '2013-03-18 14:52:09', '', 'Nos projets', '', 'publish', 'open', 'open', '', 'nos-projets', '', '', '2013-04-11 20:03:59', '2013-04-11 19:03:59', '', 0, 'http://localhost:8888/clic/?page_id=7', 0, 'page', '', 0),
 (10, 1, '2013-03-18 15:47:30', '2013-03-18 14:47:30', '', 'Nos projets', '', 'inherit', 'open', 'open', '', '7-revision', '', '', '2013-03-18 15:47:30', '2013-03-18 14:47:30', '', 7, 'http://localhost:8888/clic/?p=10', 0, 'revision', '', 0),
-(11, 1, '2013-03-18 15:52:35', '2013-03-18 14:52:35', ' ', '', '', 'publish', 'open', 'closed', '', '11', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=11', 1, 'nav_menu_item', '', 0),
+(11, 1, '2013-03-18 15:52:35', '2013-03-18 14:52:35', ' ', '', '', 'publish', 'open', 'closed', '', '11', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=11', 1, 'nav_menu_item', '', 0),
 (13, 1, '2013-03-18 16:02:23', '2013-03-18 15:02:23', '', 'Accueil', '', 'publish', 'open', 'closed', '', 'accueil-2', '', '', '2013-04-10 20:36:08', '2013-04-10 19:36:08', '', 0, 'http://localhost:8888/clic/?p=13', 1, 'nav_menu_item', '', 0),
 (14, 1, '2013-03-18 16:02:23', '2013-03-18 15:02:23', ' ', '', '', 'publish', 'open', 'closed', '', '14', '', '', '2013-04-10 20:36:08', '2013-04-10 19:36:08', '', 0, 'http://localhost:8888/clic/?p=14', 2, 'nav_menu_item', '', 0),
 (16, 1, '2013-03-18 18:14:29', '2013-03-18 17:14:29', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu''elle restera à la même place, et s''affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J''habite à Bordeaux, j''ai un super chien baptisé Russell, et j''aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n...ou bien quelque chose comme ça :\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n''a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost:8888/clic/wp-admin/">tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Présentation', '', 'inherit', 'open', 'open', '', '2-autosave', '', '', '2013-03-18 18:14:29', '2013-03-18 17:14:29', '', 2, 'http://localhost:8888/clic/?p=16', 0, 'revision', '', 0),
@@ -841,7 +843,7 @@ INSERT INTO `wpclic_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `
 (117, 1, '2013-04-13 21:17:56', '2013-04-13 20:17:56', '', 'Accueil', '', 'inherit', 'closed', 'closed', '', '19-revision-8', '', '', '2013-04-13 21:17:56', '2013-04-13 20:17:56', '', 19, 'http://localhost:8888/clic/19-revision-8', 0, 'revision', '', 0),
 (118, 1, '2013-04-18 12:51:50', '2013-04-18 11:51:50', 'Créé fin 2011, nous avons besoin de vous ! Nous situons notre action sur le long terme, aidez-nous ! Plusieurs moyens sont possibles: Appui matériel, appui financier, appui technique, parler de nous.', 'Accueil', '', 'inherit', 'closed', 'closed', '', '19-autosave', '', '', '2013-04-18 12:51:50', '2013-04-18 11:51:50', '', 19, 'http://localhost:8888/clic/19-autosave', 0, 'revision', '', 0),
 (119, 1, '2013-04-14 22:17:18', '2013-04-14 21:17:18', 'Lorem Ipsum dolor etc quoi !', 'Dons', '', 'publish', 'closed', 'closed', '', 'dons', '', '', '2013-05-31 22:36:44', '2013-05-31 21:36:44', '', 0, 'http://localhost:8888/clic/?page_id=119', 0, 'page', '', 0),
-(126, 1, '2013-04-17 21:06:28', '2013-04-17 20:06:28', '', '  ', 'Clic sans frontière', 'publish', 'closed', 'closed', '', '_', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=126', 4, 'nav_menu_item', '', 0),
+(126, 1, '2013-04-17 21:06:28', '2013-04-17 20:06:28', '', '  ', 'Clic sans frontière', 'publish', 'closed', 'closed', '', '_', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=126', 4, 'nav_menu_item', '', 0),
 (127, 1, '2013-04-17 21:49:57', '2013-04-17 20:49:57', 'Le <strong>Lorem Ipsum</strong> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'Atelier 1', '', 'publish', 'closed', 'closed', '', 'atelier-1', '', '', '2013-05-02 21:29:57', '2013-05-02 20:29:57', '', 0, 'http://localhost:8888/clic/?post_type=atelier&#038;p=127', 0, 'atelier', '', 0),
 (128, 1, '2013-04-17 21:50:15', '2013-04-17 20:50:15', 'LE WEB CAY LE B1 TOI MEME TU SAIS', 'Atelier 2', '', 'publish', 'closed', 'closed', '', 'atelier-2', '', '', '2013-05-02 21:29:38', '2013-05-02 20:29:38', '', 0, 'http://localhost:8888/clic/?post_type=atelier&#038;p=128', 0, 'atelier', '', 0),
 (129, 1, '2013-04-17 21:53:45', '2013-04-17 20:53:45', '', 'Ateliers', '', 'publish', 'closed', 'closed', '', 'ateliers', '', '', '2013-04-17 21:55:04', '2013-04-17 20:55:04', '', 0, 'http://localhost:8888/clic/?page_id=129', 0, 'page', '', 0),
@@ -875,11 +877,10 @@ INSERT INTO `wpclic_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `
 (160, 1, '2013-05-06 16:42:56', '2013-05-06 15:42:56', '[contact-form-7 id="139" title="Formulaire de contact 1"]', 'Contact', '', 'inherit', 'open', 'closed', '', '110-autosave', '', '', '2013-05-06 16:42:56', '2013-05-06 15:42:56', '', 110, 'http://localhost:8888/clic/110-autosave', 0, 'revision', '', 0),
 (161, 1, '2013-03-26 01:39:25', '2013-03-26 00:39:25', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous !', 'Bonjour tout le monde&nbsp;!', '', 'inherit', 'open', 'closed', '', '1-revision-2', '', '', '2013-03-26 01:39:25', '2013-03-26 00:39:25', '', 1, 'http://localhost:8888/clic/1-revision-2', 0, 'revision', '', 0),
 (162, 1, '2013-03-26 02:20:36', '2013-03-26 01:20:36', 'Le retour !', 'Article 2', '', 'inherit', 'open', 'closed', '', '50-revision', '', '', '2013-03-26 02:20:36', '2013-03-26 01:20:36', '', 50, 'http://localhost:8888/clic/50-revision', 0, 'revision', '', 0),
-(164, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '164', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=164', 2, 'nav_menu_item', '', 0),
-(165, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '165', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=165', 3, 'nav_menu_item', '', 0),
-(166, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '166', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=166', 7, 'nav_menu_item', '', 0),
-(167, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '167', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=167', 6, 'nav_menu_item', '', 0),
-(168, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '168', '', '', '2013-05-19 01:56:46', '2013-05-19 00:56:46', '', 0, 'http://localhost:8888/clic/?p=168', 5, 'nav_menu_item', '', 0),
+(164, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '164', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=164', 2, 'nav_menu_item', '', 0),
+(165, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '165', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=165', 5, 'nav_menu_item', '', 0),
+(166, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '166', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=166', 7, 'nav_menu_item', '', 0),
+(167, 1, '2013-05-19 00:53:55', '2013-05-18 23:53:55', ' ', '', '', 'publish', 'open', 'closed', '', '167', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=167', 6, 'nav_menu_item', '', 0),
 (169, 1, '2013-05-19 01:56:54', '0000-00-00 00:00:00', '', 'Test', '', 'draft', 'open', 'closed', '', '', '', '', '2013-05-19 01:56:54', '2013-05-19 00:56:54', '', 0, 'http://localhost:8888/clic/?post_type=project&#038;p=169', 0, 'project', '', 0),
 (170, 1, '2013-05-19 01:58:36', '2013-05-19 00:58:36', 'test', 'Test', '', 'publish', 'open', 'closed', '', 'test', '', '', '2013-05-19 01:58:36', '2013-05-19 00:58:36', '', 0, 'http://localhost:8888/clic/?post_type=project&#038;p=170', 0, 'project', '', 0),
 (171, 1, '2013-05-19 01:58:48', '2013-05-19 00:58:48', 'Test', 'Test again', '', 'publish', 'open', 'closed', '', 'test-again', '', '', '2013-05-19 01:58:48', '2013-05-19 00:58:48', '', 0, 'http://localhost:8888/clic/?post_type=project&#038;p=171', 0, 'project', '', 0),
@@ -912,7 +913,9 @@ INSERT INTO `wpclic_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `
 (199, 1, '2013-06-01 19:32:14', '2013-06-01 18:32:14', 'Le <strong>Lorem Ipsum</strong> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'Page 2', '', 'inherit', 'open', 'closed', '', '198-revision', '', '', '2013-06-01 19:32:14', '2013-06-01 18:32:14', '', 198, 'http://localhost:8888/clic/198-revision', 0, 'revision', '', 0),
 (200, 1, '2013-06-01 19:32:29', '2013-06-01 18:32:29', 'Le <strong>Lorem Ipsum</strong> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'PAge 2', '', 'publish', 'open', 'closed', '', 'page-2-3', '', '', '2013-06-01 19:32:29', '2013-06-01 18:32:29', '', 0, 'http://localhost:8888/clic/?p=200', 0, 'post', '', 0),
 (201, 1, '2013-06-01 19:32:23', '2013-06-01 18:32:23', '', 'PAge 2', '', 'inherit', 'open', 'closed', '', '200-revision', '', '', '2013-06-01 19:32:23', '2013-06-01 18:32:23', '', 200, 'http://localhost:8888/clic/200-revision', 0, 'revision', '', 0),
-(202, 1, '2013-06-01 19:33:30', '2013-06-01 18:33:30', 'Le <strong>Lorem Ipsum</strong> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'PAge 2', '', 'inherit', 'open', 'closed', '', '200-autosave', '', '', '2013-06-01 19:33:30', '2013-06-01 18:33:30', '', 200, 'http://localhost:8888/clic/200-autosave', 0, 'revision', '', 0);
+(202, 1, '2013-06-01 19:33:30', '2013-06-01 18:33:30', 'Le <strong>Lorem Ipsum</strong> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'PAge 2', '', 'inherit', 'open', 'closed', '', '200-autosave', '', '', '2013-06-01 19:33:30', '2013-06-01 18:33:30', '', 200, 'http://localhost:8888/clic/200-autosave', 0, 'revision', '', 0),
+(203, 1, '2013-03-18 17:03:27', '2013-03-18 16:03:27', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu''elle restera à la même place, et s''affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\r\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J''habite à Bordeaux, j''ai un super chien baptisé Russell, et j''aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\r\n...ou bien quelque chose comme ça :\r\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n''a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\r\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost:8888/clic/wp-admin/">tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Présentation', '', 'inherit', 'open', 'closed', '', '2-revision-3', '', '', '2013-03-18 17:03:27', '2013-03-18 16:03:27', '', 2, 'http://localhost:8888/clic/2-revision-3', 0, 'revision', '', 0),
+(204, 1, '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 'Articles', '', 'publish', 'open', 'closed', '', 'articles', '', '', '2013-06-01 21:07:54', '2013-06-01 20:07:54', '', 0, 'http://localhost:8888/clic/?p=204', 3, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -995,14 +998,14 @@ INSERT INTO `wpclic_term_relationships` (`object_id`, `term_taxonomy_id`, `term_
 (165, 3, 0),
 (166, 3, 0),
 (167, 3, 0),
-(168, 3, 0),
 (184, 1, 0),
 (189, 1, 0),
 (191, 1, 0),
 (193, 1, 0),
 (196, 1, 0),
 (198, 1, 0),
-(200, 1, 0);
+(200, 1, 0),
+(204, 3, 0);
 
 -- --------------------------------------------------------
 
