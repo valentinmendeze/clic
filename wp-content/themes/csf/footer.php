@@ -28,14 +28,6 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.jrumble.1.3.min.js"></script>
 
 	<script>
-		$('#logo').jrumble();
-
-		$('#logo').hover(function(){
-			$(this).trigger('startRumble');
-		}, function(){
-			$(this).trigger('stopRumble');
-		});
-
 		$('.logo').jrumble();
 
 		$('.logo').hover(function(){

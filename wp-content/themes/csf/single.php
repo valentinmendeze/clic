@@ -1,23 +1,39 @@
-<?php get_header(); ?>
+<?php
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
+$recentPosts = new WP_Query();
+$recentPosts->query('showposts=10');
 
-			<?php while ( have_posts() ) : the_post(); ?>
+get_header(); ?>
 
-				<?php get_template_part( 'content', get_post_format() ); ?>
+	<section id="subhead" class="subhead subhead-listarticles">
+		<div class="hgroup">
+			<h1 class="site-title">Les ateliers</h1>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+		</div>
+	</section>
 
-				<nav class="nav-single">
-					<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-					<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-					<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-				</nav><!-- .nav-single -->
-
-				<?php comments_template( '', true ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+	<section class="current-article container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<article class="span8">
+					<?php if(have_posts()): the_post(); ?>
+					<?php the_post_thumbnail(); ?>
+					<h3><?php the_title(); ?></h3>
+					<?php the_content(); ?>
+					<p class="info">Le <?php echo get_the_date(); ?>, par <?php the_author(); ?></p>
+					<?php endif; ?>
+				</article>
+				<aside class="span4">
+					<h3>Les autres articles</h3>
+					<ul>
+						<?php if($recentPosts->have_posts()): while($recentPosts->have_posts()): $recentPosts->the_post(); ?>
+						<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+						<?php endwhile; endif; ?>
+					</ul>
+					<a href="<?php bloginfo('url') ?>/articles" class="back">Revenir à la liste d'articles</a>
+				</aside>
+			</div>
+		</div>
+	</section>
 
 <?php get_footer(); ?>

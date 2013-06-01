@@ -4,8 +4,10 @@ Template Name: Articles
 */
 get_header();
 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 $recentPosts = new WP_Query();
-$recentPosts->query('showposts=6');
+$recentPosts->query('showposts=6&paged=' . $paged);
 
 ?>
 
@@ -24,14 +26,18 @@ $recentPosts->query('showposts=6');
 				<ul class="thumbnails">
 					<?php while($recentPosts->have_posts()): $recentPosts->the_post(); ?>
 					<li class="span4">
-						<a href="#" class="thumbnail">
-							<img data-src="holder.js/300x200" alt="">
-							<h3>Thumbnail label</h3>
-			 				<p>Thumbnail caption...</p>
+						<a href="<?php the_permalink(); ?>" class="thumbnail">
+							<?php the_post_thumbnail('article'); ?>
+							<h3><?php the_title(); ?></h3>
+			 				<?php the_excerpt(); ?>
+			 				<div class="more">Lire l'article</div>
 						</a>
 					</li>
 					<?php endwhile; ?>
 				</ul>
+				<?php
+					echo pagination($recentPosts);
+				?>
 			</div>
 		</div>
 	</section>
