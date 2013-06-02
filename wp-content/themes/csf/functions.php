@@ -15,6 +15,8 @@
 	}
 	add_filter('comment_form_defaults', 'no_comment_notes_after');
 
+	add_action('after_setup_theme', 'csf_theme_init');
+
 	function csf_theme_init() {
 
 		add_theme_support( 'menus' );
@@ -89,8 +91,6 @@
            	}
         }
 	}
-
-	add_action('after_setup_theme', 'csf_theme_init');
 
 	add_theme_support( 'post-thumbnails' );
 	
