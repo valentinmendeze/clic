@@ -9,6 +9,22 @@
 				</nav>
 				<div class="link span4">
 					<h3>partenaires</h3>
+					<div id="myCarousel" class="carousel slide">
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+					<?php $i=0; if(get_field('reference', 'option')): ?>
+					<?php while(has_sub_field('reference', 'option')): ?>
+						
+						<div <?php if($i == 0): $i++; ?>class="active item"<?php else: ?>class="item"<?php endif; ?>>
+							<img src="<?php the_sub_field('image_reference'); ?>" alt="<?php the_sub_field('image_reference'); ?>">
+						</div>
+						
+					<?php endwhile; endif; ?>
+					</div>
+					<!-- Carousel nav 
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
+					</div>
 				</div>
 				<div class="contact-footer span4">
 					<h3>contact</h3>
@@ -28,6 +44,10 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.jrumble.1.3.min.js"></script>
 
 	<script>
+		$('.carousel').carousel({
+		  interval: 2000
+		})
+
 		$('.logo').jrumble();
 
 		$('.logo').hover(function(){
