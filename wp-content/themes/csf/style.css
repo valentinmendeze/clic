@@ -1397,6 +1397,10 @@ body .site .contact .contact-content form p {
 		padding-top: 0px;
 	}
 
+	body .site .subhead .hgroup {
+		padding-top: 20px;
+	}
+
 	body .site .list-ateliers ul li {
 		min-height: 800px;
 	}	
@@ -1436,6 +1440,10 @@ body .site .contact .contact-content form p {
 		position: relative;
 		bottom: 0px;
 		padding-top: 0px;
+	}
+
+	body .site .subhead .hgroup {
+		padding-top: 20px;
 	}
 
 	body .site .subhead .hgroup h2 {
