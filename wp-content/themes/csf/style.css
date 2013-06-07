@@ -69,7 +69,7 @@ header ul .logo {
 
 header ul .logo:hover {
 	background: url(images/logo-clic-sans-frontieres.png) no-repeat center 12px;
-	background-size: 58%;
+	background-size: 100%;
 }
 
 header ul li:hover {
