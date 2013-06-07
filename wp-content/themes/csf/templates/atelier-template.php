@@ -65,7 +65,7 @@ Template Name: Ateliers
 				<li class="span4 ateliers-finis">
 					<div class="thumbnail">
 						<h3 class="last-thumb-title">Les ateliers terminés</h3>
-						<a href="#" title="Voir les ateliers terminés" class="more">Découvrir les ateliers</a>
+						<a href="<?php bloginfo('url'); ?>/ateliers-termines" title="Voir les ateliers terminés" class="more">Découvrir les ateliers</a>
 					</div>
 				</li>
 			</ul>
