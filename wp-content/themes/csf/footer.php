@@ -28,6 +28,7 @@
 				</div>
 				<div class="contact-footer span4">
 					<h3>contact</h3>
+					<p><?php the_field('contact_footer', 'option'); ?></p>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,6 @@ Template Name: A propos
 
 	$team = new WP_query(array(
 		'post_type' => 'team',
-		'posts_per_page' => 3,
 	));
 
 ?>
@@ -28,7 +27,7 @@ Template Name: A propos
 			<div class="span12">
 				<div class="span3"><!-- Icone--></div>
 				<div class="span9">
-					<p><?php the_content(); ?></p>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
@@ -40,23 +39,25 @@ Template Name: A propos
 		
 		<div class="row-fluid">
 			<div class="span12">
-			<?php if($team->have_posts()): while($team->have_posts()): $team->the_post(); ?>
-				<div class="span4">
-					<div class="portrait">
-						<p><?php the_content(); ?></p>
-					</div>
-					<div class="triangle"></div>
-					<div class="identity">
-						<div class="profil">
-							<span class="name"><?php the_title(); ?></span>
-							<br>
-							<span class="job"><?php the_field('profession'); ?></span>
+				<ul class="thumbnails">
+					<?php if($team->have_posts()): while($team->have_posts()): $team->the_post(); ?>
+					<li class="span4">
+						<div class="portrait">
+							<p><?php the_content(); ?></p>
 						</div>
-						<?php the_post_thumbnail('avatar'); ?>
-						<div class="clear"></div>
-					</div>
-				</div>
-			<?php endwhile; endif; ?>
+						<div class="triangle"></div>
+						<div class="identity">
+							<div class="profil">
+								<span class="name"><?php the_title(); ?></span>
+								<br>
+								<span class="job"><?php the_field('profession'); ?></span>
+							</div>
+							<?php the_post_thumbnail('avatar'); ?>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<?php endwhile; endif; ?>
+				</ul>
 			</div>
 		</div>
 	</section>

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/elastislide.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.css">
+	<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/icons/favicon.png" />
 
 	<script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.17475.js"></script>
 

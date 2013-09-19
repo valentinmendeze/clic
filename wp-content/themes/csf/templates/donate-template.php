@@ -35,7 +35,7 @@ Template Name: Dons
 				</div>				
 
 				<div class="span6">
-					<h2>Don matériel</h2>
+					<h2 class="donate-title">Don matériel</h2>
 					<?php echo do_shortcode('[contact-form-7 id="175" title="Dons"]'); ?>
 				</div>
 			</div>
@@ -64,8 +64,8 @@ Template Name: Dons
 					<p><?php the_excerpt(); ?></p>
 					<?php endif; ?>
 					<div class="commands">
-						<a href="<?php the_field('donate-link'); ?>" title="Faire un don"><div class="buttons donate">Faire un don</div></a>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url') ?>/images/more.png" class="more" alt="En savoir plus"><div class="discover">Découvrir le projet</div></a>
+						<?php if(get_field('donate-link')): ?><a href="<?php the_field('donate-link'); ?>" title="Faire un don"><div class="buttons donate">Faire un don</div></a><?php endif; ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="discover">Découvrir le projet</div></a>
 						<div class="clear"></div>
 					</div>
 				</article>

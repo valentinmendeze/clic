@@ -84,8 +84,8 @@ Template Name: Page Projets
 					<p><?php the_excerpt(); ?></p>
 					<?php endif; ?>
 					<div class="commands">
-						<a href="<?php the_field('donate-link'); ?>" title="Faire un don"><div class="buttons donate">Faire un don</div></a>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url') ?>/images/more.png" class="more" alt="En savoir plus"><div class="discover">Découvrir le projet</div></a>
+						<?php if(get_field('donate-link')): ?><a href="<?php the_field('donate-link'); ?>" title="Faire un don"><div class="buttons donate">Faire un don</div></a><?php endif; ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="discover">Découvrir le projet</div></a>
 						<div class="clear"></div>
 					</div>
 				</article>

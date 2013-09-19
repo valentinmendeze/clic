@@ -1,8 +1,8 @@
 /*
-Theme Name: Clic sans frontières
-Author: Milan Ricoul/Arnaud Lépicier
+Theme Name: Clic Sans Frontières
+Author: Milan Ricoul
 Description: Thème pour le site Clic sans frontières
-Version: 0.1 alpha
+Version: 1.0
 */
 
 html {
@@ -63,13 +63,13 @@ header ul li {
 }
 
 header ul .logo {
-	background: url(images/logo-clic-sans-frontieres.png) center 12px no-repeat;
-	background-size: 100%;
+	background: url(images/logo-clic-sans-frontieres.png) center 18px no-repeat;
+	background-size: 85%;
 }
 
 header ul .logo:hover {
-	background: url(images/logo-clic-sans-frontieres.png) no-repeat center 12px;
-	background-size: 100%;
+	background: url(images/logo-clic-sans-frontieres.png) no-repeat center 18px;
+	background-size: 85%;
 }
 
 header ul li:hover {
@@ -134,6 +134,11 @@ footer nav ul li a {
 footer nav ul li a:hover {
 	color: #b2b2b2;
 }
+
+footer .contact-footer p {
+	color: #777;
+}
+
 /* wrapper */
 
 .wrapper {
@@ -142,7 +147,7 @@ footer nav ul li a:hover {
 /* Accueil */
 
 body .site .subhead-project {
-	background: url(images/background/atelier-home.png) no-repeat;
+	background: url(images/background/atelier-home.jpg) no-repeat;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
@@ -236,25 +241,54 @@ body .site .last-project .commands {
 	width: 100%;
 }
 
-body .site .last-project .buttons{
+body .site .last-project .commands a:hover {
+	text-decoration: none;
+}
+
+body .site .last-project .donate {
+	padding-top: 12px;
+	height: 33px;
 	text-align: center;
-	background: #ef8341;
+	background: #ef8341 url(images/icons/donate-icon.png) no-repeat 2px 4px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	width: 135px;
 	margin: 5px;
+	padding-left: 20px;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-ms-transition: background .5s;
+	-o-transition: background .5s;
 }
 
-body .site .last-project .donate{
-	padding-top: 12px;
-	height: 33px;
+body .site .last-project .donate:hover {
+	background: #e2661a url(images/icons/donate-icon.png) no-repeat 2px 4px;
 }
 
 body .site .last-project .discover{
-	padding-top: 8px;
-	height: 42px;
-	font-size: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	height: 33px;
+	text-align: center;
+	background: #fff url(images/more-sample.png) no-repeat 0px 4px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 135px;
+	margin: 5px;
+	padding-left: 20px;
+	color: #02cbb7;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-ms-transition: background .5s;
+	-o-transition: background .5s;
+}
+
+body .site .last-project .discover:hover{
+	background: #eee url(images/more-sample.png) no-repeat 0px 4px;
 }
 
 body .site .last-project .more {
@@ -283,48 +317,8 @@ body .site .info p {
 	min-height: 100px;
 }
 
-body .site .button-1 {
-	background: #6dc8d8;
-	width: 100px;
-	padding: 3px;
-	margin: auto;
-	border-radius: 3px;
-	text-align: center;
-}
-
-body .site .button-1 a {
-	color: #fff;
-}
-
-body .site .button-2 {
-	background: #f7c72f;
-	width: 100px;
-	padding: 3px;
-	margin: auto;
-	border-radius: 3px;
-	text-align: center;
-}
-
-body .site .button-2 a {
-	color: #fff;
-}
-
-body .site .button-3 {
-	background: #7ebb70;
-	width: 100px;
-	padding: 3px;
-	margin: auto;
-	border-radius: 3px;
-	text-align: center;
-}
-
-body .site .button-3 a {
-	color: #fff;
-}
-
 body .site .articles {
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 body .site .articles h2 {
@@ -335,7 +329,7 @@ body .site .articles h2 {
 }
 
 body .site .articles .thumbnails {
-	margin-left: 25%;
+	margin-left: 15%;
 }
 
 body .site .articles .thumbnails li {
@@ -343,10 +337,15 @@ body .site .articles .thumbnails li {
 }
 
 body .site .articles .thumbnails li .thumbnail {
+	min-height: 480px!important;
 	box-shadow:  0px 0px 1px #aaa;
 	border-radius: 0px;
 	text-align: center;
 	min-height: 400px;
+}
+
+body .site .articles .thumbnails li .thumbnail a:hover {
+	text-decoration: none;
 }
 
 body .site .articles .thumbnails li .thumbnail h3 {
@@ -358,6 +357,8 @@ body .site .articles .thumbnails li .thumbnail h3 {
 
 body .site .articles .thumbnails li .thumbnail p {
 	color: #b1b1b1;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 body .site .articles .thumbnails li .thumbnail a {
@@ -468,6 +469,10 @@ body .site .list-articles .thumbnails li {
 	background: #fff;
 }
 
+body .site .list-articles a {
+	min-height: 480px;
+}
+
 body .site .list-articles a:hover {
 	text-decoration: none;
 }
@@ -493,7 +498,7 @@ body .site .list-articles .more {
 	width: 100px;
 	margin: auto;
 	padding-top: 30px;
-	background: url(images/more-green.png) no-repeat;
+	background: url(images/more.png) no-repeat;
 	background-position: 35px 0px;
 }
 
@@ -528,33 +533,33 @@ body .site .current-article article .info {
 	padding-top: 0px!important;
 }
 
-body .site .current-article aside {
+body .site .current-article .others-articles {
 	background: #666;
-	padding-top: 40px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 }
 
-body .site .current-article aside h3 {
+body .site .current-article .others-articles h3 {
 	color: #fff;
 	text-transform: uppercase;
 	margin-left: 25px;
 	line-height: 28px;
 }
 
-body .site .current-article aside a {
+body .site .current-article .others-articles a {
 	color: #fff;
 }
 
-body .site .current-article aside ul {
-	margin-left: 25px;
+body .site .current-article .others-articles ul {
+	margin-left: 40px;
 	margin-top: 20px;
 }
 
-body .site .current-article aside ul li {
-	list-style: none;
+body .site .current-article .others-articles ul li {
+	list-style-type: square;
 }
 
-body .site .current-article aside .back {
+body .site .current-article .others-articles .back {
 	display: block;
 	background: url(images/arrow-left-grey.png) no-repeat;
 	margin-left: 25px;
@@ -568,7 +573,7 @@ body .site .current-article aside .back {
 /* Page Liste des projets */
 
 body .site .subhead-projectarchive {
-	background: url(images/background/projet-list-bg.png) no-repeat;
+	background: url(images/background/projet-list-bg.jpg) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -718,6 +723,10 @@ body .site .subhead-single-project {
 	overflow: hidden;
 }
 
+body .site .subhead-single-project .hgroup {
+	padding-top: 0px!important;
+}
+
 body .site .subhead-single-project h1 {
 	text-shadow: 0px 0px 9px #000;
 	text-transform: uppercase;
@@ -846,7 +855,7 @@ body .site .current-project aside .cout {
 }
 
 body .site .current-project aside .pdf {
-	background: url(images/logo-pdf.png) no-repeat left top;
+	background: url(images/icon-download.png) no-repeat left top;
 	padding: 5px 0px 3px 40px;
 	display: block;	
 }
@@ -974,7 +983,6 @@ body .site .list-ateliers ul li .thumbnail .infos .lieu {
 
 body .site .list-ateliers ul li .thumbnail .more {
 	display: block;
-	width: 100%;
 	height: 100px;
 	background: url(images/more.png) no-repeat;
 	padding-top: 8px;
@@ -1095,7 +1103,7 @@ body .site .list-ateliers-termines ul li .thumbnail .more span {
 
 
 body .site .subhead-about {
-	background: url(images/background/about-bg.png) no-repeat;
+	background: url(images/background/about-bg.jpg) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -1189,7 +1197,7 @@ body .site .members .identity img {
 /* Page Dons */
 
 body .site .subhead-donate {
-	background: url(images/background/donate-bg.png) no-repeat;
+	background: url(images/background/donate-bg.jpg) no-repeat;
 	height: 350px;
 	overflow: hidden;
 }
@@ -1381,6 +1389,20 @@ body .site .contact .contact-content form p {
 	}
 }
 
+/* 404 */
+
+body .site .not-found {
+	background: #fff;
+}
+
+body .site .not-found .span12 {
+	margin-left: 25px;
+}
+
+body .site .not-found .span12 p {
+	color: #777;
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1419,6 +1441,20 @@ body .site .contact .contact-content form p {
 	body .site .members .identity .profil {
 		float: none;
 		margin-bottom: 20px;
+	}
+
+	/* Dons */
+
+	body .site .donate .donate-title {
+		margin-left: 15px;
+	}
+
+	body .site .donate form {
+		margin-left: 15px;
+	}
+
+	body .site .donate form input, textarea {
+		position: static!important;
 	}
 }
 
@@ -1493,7 +1529,7 @@ body .site .contact .contact-content form p {
 	}
 
 	body .site .last-project .buttons, .discover {
-		margin: auto;
+		margin: 10px auto!important;
 	}
 
 	body .site .last-project .more {
@@ -1503,12 +1539,13 @@ body .site .contact .contact-content form p {
 	/* Page Projets */
 
 	body .site .project-list {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	body .site .project-list .span12 {
 		background: rgb(2, 139, 203);
+		padding-bottom: 5px;
 	}
 
 	body .site .project-list .projectlist-caption {
@@ -1566,5 +1603,16 @@ body .site .contact .contact-content form p {
 	body .site .contact .contact-content p {
 		margin-left: 15px;
 		margin-right: 15px;
+	}
+
+
+	/* Dons */
+
+	body .site .donate .donate-title {
+		margin-left: 30px;
+	}
+
+	body .site .donate form input, textarea {
+		position: static!important;
 	}
 }
